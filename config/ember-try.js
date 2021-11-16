@@ -75,6 +75,8 @@ module.exports = function () {
             devDependencies: {
               'ember-data': 'latest',
               'ember-source': releaseUrl,
+              'ember-auto-import': '^2.2.3',
+              webpack: '^5.0.0',
             },
           },
         },
