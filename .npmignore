@@ -6,6 +6,7 @@
 /tests
 /tmp
 **/.gitkeep
+.babelrc.js
 .bowerrc
 .editorconfig
 .ember-cli
