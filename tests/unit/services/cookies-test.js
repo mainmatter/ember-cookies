@@ -82,7 +82,7 @@ module('CookiesService', function (hooks) {
       let value = randomString();
       this.cookies.write(COOKIE_NAME, value);
 
-      assert.equal(this.cookies.read(COOKIE_NAME), value);
+      assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
     });
   }
 
@@ -123,7 +123,7 @@ module('CookiesService', function (hooks) {
           document.cookie = `${COOKIE_NAME}=${value};`;
           let afterRoundtrip = this.cookies.read(COOKIE_NAME);
 
-          assert.equal(afterRoundtrip, value);
+          assert.strictEqual(afterRoundtrip, value);
         });
 
         test('URI-component-decodes the value', function (assert) {
@@ -131,7 +131,7 @@ module('CookiesService', function (hooks) {
           document.cookie = `${COOKIE_NAME}=${encodeURIComponent(value)}`;
           let afterRoundtrip = this.cookies.read(COOKIE_NAME);
 
-          assert.equal(afterRoundtrip, value);
+          assert.strictEqual(afterRoundtrip, value);
         });
 
         test("doesn't decode the value when raw is true", function (assert) {
@@ -139,7 +139,7 @@ module('CookiesService', function (hooks) {
           document.cookie = `${COOKIE_NAME}=${value}`;
           let afterRoundtrip = this.cookies.read(COOKIE_NAME, { raw: true });
 
-          assert.equal(afterRoundtrip, value);
+          assert.strictEqual(afterRoundtrip, value);
         });
 
         test('handles invalid cookies', function (assert) {
@@ -151,13 +151,13 @@ module('CookiesService', function (hooks) {
         test('returns undefined when the cookie does not exist', function (assert) {
           let afterRoundtrip = this.cookies.read('does-not-exist');
 
-          assert.equal(afterRoundtrip, undefined);
+          assert.strictEqual(afterRoundtrip, undefined);
         });
 
         test('returns undefined for a cookie that was written for another path', function (assert) {
           this.cookies.write(COOKIE_NAME, 'value', { path: '/some-other-path' });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('returns the cookie value for a cookie that was written for the same path', function (assert) {
@@ -166,13 +166,13 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { path });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
         });
 
         test('returns undefined for a cookie that was written for another domain', function (assert) {
           this.cookies.write(COOKIE_NAME, 'value', { domain: 'another-domain.com' });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('returns the cookie value for a cookie that was written for the same domain', function (assert) {
@@ -180,13 +180,13 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { domain });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
         });
 
         test('returns undefined for an expired cookie', function (assert) {
           this.cookies.write(COOKIE_NAME, 'value', { expires: new Date(-1) });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('returns the cookie value for a not-yet-expired cookie', function (assert) {
@@ -195,20 +195,20 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { expires: expirationDate });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
         });
 
         test('returns undefined for a cookie that reached its max age', function (assert) {
           this.cookies.write(COOKIE_NAME, 'value', { maxAge: -1 });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('returns the cookie value for a cookie that has not yet reached its max age', function (assert) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { maxAge: 99999999 });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
         });
 
         test('works when the cookie contains a "="', function (assert) {
@@ -216,7 +216,7 @@ module('CookiesService', function (hooks) {
           document.cookie = `${COOKIE_NAME}=${value};`;
           let afterRoundtrip = this.cookies.read(COOKIE_NAME);
 
-          assert.equal(afterRoundtrip, value);
+          assert.strictEqual(afterRoundtrip, value);
         });
       });
 
@@ -347,11 +347,11 @@ module('CookiesService', function (hooks) {
           let path = pathname.substring(0, pathname.lastIndexOf('/'));
           document.cookie = `${COOKIE_NAME}=${value}; path=${path};`;
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
           this.cookies.clear(COOKIE_NAME);
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         module('with a path option', function () {
@@ -361,11 +361,11 @@ module('CookiesService', function (hooks) {
             let path = pathname.substring(0, pathname.lastIndexOf('/'));
             this.cookies.write(COOKIE_NAME, value);
 
-            assert.equal(this.cookies.read(COOKIE_NAME), value);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
             this.cookies.clear(COOKIE_NAME, { path });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
           });
 
           test('clears the cookie set for a given path', function (assert) {
@@ -373,11 +373,11 @@ module('CookiesService', function (hooks) {
             let value = randomString();
             this.cookies.write(COOKIE_NAME, value, { path });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), value);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
             this.cookies.clear(COOKIE_NAME, { path });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
           });
         });
 
@@ -387,11 +387,11 @@ module('CookiesService', function (hooks) {
             let value = randomString();
             this.cookies.write(COOKIE_NAME, value);
 
-            assert.equal(this.cookies.read(COOKIE_NAME), value);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
             this.cookies.clear(COOKIE_NAME, { domain });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
           });
 
           test('clears the cookie set for a given domain', function (assert) {
@@ -399,11 +399,11 @@ module('CookiesService', function (hooks) {
             let value = randomString();
             this.cookies.write(COOKIE_NAME, value, { domain });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), value);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
             this.cookies.clear(COOKIE_NAME, { domain });
 
-            assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+            assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
           });
         });
       });
@@ -498,25 +498,28 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value);
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('URI-component-decodes the value', function (assert) {
         let value = '!"§$%&/()=?"';
         this.cookies.write(COOKIE_NAME, value);
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test("doesn't decode the value when raw is true", function (assert) {
         let value = '!"§$%&/()=?"';
         this.cookies.write(COOKIE_NAME, value);
 
-        assert.equal(this.cookies.read(COOKIE_NAME, { raw: true }), encodeURIComponent(value));
+        assert.strictEqual(
+          this.cookies.read(COOKIE_NAME, { raw: true }),
+          encodeURIComponent(value)
+        );
       });
 
       test('returns undefined when the cookies does not exist', function (assert) {
-        assert.equal(this.cookies.read('does-not-exist'), undefined);
+        assert.strictEqual(this.cookies.read('does-not-exist'), undefined);
       });
 
       test('returns undefined for a cookie that was written for another path', function (assert) {
@@ -524,7 +527,7 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { path: '/some-other-path' });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
       });
 
       test('returns the cookie value for a cookie that was written for the same path', function (assert) {
@@ -532,7 +535,7 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { path: '/path' });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('returns undefined for a cookie that was written for another domain', function (assert) {
@@ -540,7 +543,7 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { domain: 'another-domain.com' });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
       });
 
       test('returns the cookie value for a cookie that was written for the same domain', function (assert) {
@@ -548,7 +551,7 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { domain: 'example.com' });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('returns the cookie value for a cookie that was written for a parent domain', function (assert) {
@@ -556,14 +559,14 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { domain: 'example.com' });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('returns undefined for an expired cookie', function (assert) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { expires: new Date(-1) });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
       });
 
       test('returns the cookie value for a not-yet-expired cookie', function (assert) {
@@ -572,21 +575,21 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { expires: expirationDate });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('returns undefined for a cookie that reached its max age', function (assert) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { maxAge: -1 });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
       });
 
       test('returns the cookie value for a cookie that has not yet reached its max age', function (assert) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value, { maxAge: 99999999 });
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
       });
 
       test('respects the request headers after a cookie was written already', function (assert) {
@@ -606,7 +609,7 @@ module('CookiesService', function (hooks) {
         this.cookies.write(COOKIE_NAME, value);
         let afterRoundtrip = this.cookies.read(COOKIE_NAME);
 
-        assert.equal(afterRoundtrip, value);
+        assert.strictEqual(afterRoundtrip, value);
       });
     });
 
@@ -618,8 +621,8 @@ module('CookiesService', function (hooks) {
         let value = randomString();
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=${value}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=${value}`);
         };
 
         this.cookies.write(COOKIE_NAME, value);
@@ -633,9 +636,9 @@ module('CookiesService', function (hooks) {
         this.cookies.write(COOKIE_NAME, value2);
 
         const headers = this.fakeFastBoot.response.headers.getAll('set-cookie');
-        assert.equal(headers.length, 1);
+        assert.strictEqual(headers.length, 1);
         assert.notEqual(headers[0], `${COOKIE_NAME}=${value1}`);
-        assert.equal(headers[0], `${COOKIE_NAME}=${value2}`);
+        assert.strictEqual(headers[0], `${COOKIE_NAME}=${value2}`);
       });
 
       test('URI-component-encodes the value', function (assert) {
@@ -644,8 +647,8 @@ module('CookiesService', function (hooks) {
         let encodedValue = encodeURIComponent(value);
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=${encodedValue}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=${encodedValue}`);
         };
 
         this.cookies.write(COOKIE_NAME, value);
@@ -656,8 +659,8 @@ module('CookiesService', function (hooks) {
         let value = '!"§$%&/()=?"';
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=${value}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=${value}`);
         };
 
         this.cookies.write(COOKIE_NAME, value, { raw: true });
@@ -669,8 +672,8 @@ module('CookiesService', function (hooks) {
         this.fakeFastBoot.request._host = domain;
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; domain=${domain}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; domain=${domain}`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { domain });
@@ -681,8 +684,8 @@ module('CookiesService', function (hooks) {
         let date = new Date();
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; expires=${date.toUTCString()}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; expires=${date.toUTCString()}`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { expires: date });
@@ -693,8 +696,8 @@ module('CookiesService', function (hooks) {
         let maxAge = 10;
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; max-age=${maxAge}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; max-age=${maxAge}`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { maxAge });
@@ -703,8 +706,8 @@ module('CookiesService', function (hooks) {
       test('sets the secure flag', function (assert) {
         assert.expect(2);
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; secure`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; secure`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { secure: true });
@@ -715,8 +718,8 @@ module('CookiesService', function (hooks) {
         let path = '/sample-path';
 
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; path=${path}`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; path=${path}`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { path });
@@ -725,8 +728,8 @@ module('CookiesService', function (hooks) {
       test('sets the httpOnly flag', function (assert) {
         assert.expect(2);
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; httpOnly`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; httpOnly`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { httpOnly: true });
@@ -741,8 +744,8 @@ module('CookiesService', function (hooks) {
       test('sets the sameSite flag', function (assert) {
         assert.expect(2);
         this.fakeFastBoot.response.headers.append = function (headerName, headerValue) {
-          assert.equal(headerName, 'set-cookie');
-          assert.equal(headerValue, `${COOKIE_NAME}=test; SameSite=Strict`);
+          assert.strictEqual(headerName, 'set-cookie');
+          assert.strictEqual(headerValue, `${COOKIE_NAME}=test; SameSite=Strict`);
         };
 
         this.cookies.write(COOKIE_NAME, 'test', { sameSite: 'Strict' });
@@ -756,11 +759,11 @@ module('CookiesService', function (hooks) {
         let value = randomString();
         this.cookies.write(COOKIE_NAME, value);
 
-        assert.equal(this.cookies.read(COOKIE_NAME), value);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
         this.cookies.clear(COOKIE_NAME);
 
-        assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+        assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
       });
 
       module('with a path option', function () {
@@ -769,11 +772,11 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value);
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
           this.cookies.clear(COOKIE_NAME, { path: '/path' });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('clears the cookie set for a given path', function (assert) {
@@ -782,11 +785,11 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { path });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
           this.cookies.clear(COOKIE_NAME, { path });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
       });
 
@@ -797,11 +800,11 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value);
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
           this.cookies.clear(COOKIE_NAME, { domain });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
 
         test('clears the cookie set for a given domain', function (assert) {
@@ -810,11 +813,11 @@ module('CookiesService', function (hooks) {
           let value = randomString();
           this.cookies.write(COOKIE_NAME, value, { domain });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), value);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), value);
 
           this.cookies.clear(COOKIE_NAME, { domain });
 
-          assert.equal(this.cookies.read(COOKIE_NAME), undefined);
+          assert.strictEqual(this.cookies.read(COOKIE_NAME), undefined);
         });
       });
     });
