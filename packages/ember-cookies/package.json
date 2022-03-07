@@ -33,8 +33,7 @@
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.7.1",
-    "ember-native-class-polyfill": "^1.0.6"
+    "@embroider/addon-shim": "^1.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -62,7 +61,7 @@
     "type": "addon",
     "version": 2,
     "versionCompatibility": {
-      "ember": ">=3.4"
+      "ember": ">=3.8"
     },
     "app-js": {
       "./services/cookies.js": "./dist/_app_/services/cookies.js"
