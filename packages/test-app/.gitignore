@@ -9,8 +9,6 @@
 /bower_components
 
 # misc
-/packages/ember-cookies/README.md
-/packages/ember-cookies/LICENSE.md
 /.eslintcache
 /.sass-cache
 /connect.lock

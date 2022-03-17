@@ -1,0 +1,44 @@
+{
+  "name": "ember-cookies",
+  "version": "0.5.2",
+  "description": "Cookies abstraction for Ember.js that works both in the browser as well as with Fastboot on the server.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "author": "",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "repository": "https://github.com/simplabs/ember-cookies",
+  "scripts": {
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "prepublishOnly": "cp ../../README.md ../../LICENSE.md ."
+  },
+  "dependencies": {
+    "ember-cli-babel": "^7.26.3",
+    "ember-native-class-polyfill": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-ember": "^10.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.5.1"
+  },
+  "engines": {
+    "node": ">= 12.*"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "versionCompatibility": {
+      "ember": ">=3.4"
+    }
+  }
+}

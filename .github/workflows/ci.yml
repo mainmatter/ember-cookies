@@ -22,8 +22,13 @@ jobs:
           node-version: 12.x
           cache: yarn
 
-      - run: yarn install
-      - run: yarn lint:js
+      - run: yarn install --frozen-lockfile
+      - name: Lint Addon
+        run: yarn lint:js
+        working-directory: packages/ember-cookies
+      - name: Lint Test App
+        run: yarn lint:js
+        working-directory: packages/test-app
 
   tests:
     name: Tests
@@ -56,11 +61,12 @@ jobs:
           node-version: 12.x
           cache: yarn
 
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
 
       - name: tests
         run: yarn test:one ${{ matrix.test-suite }}
         continue-on-error: ${{matrix.allow-failure}}
+        working-directory: packages/test-app
 
   extra-tests:
     name: Tests (Floating Dependenies)
@@ -79,3 +85,4 @@ jobs:
       - name: tests
         run: yarn test
         continue-on-error: true
+        working-directory: packages/test-app
