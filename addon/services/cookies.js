@@ -189,7 +189,7 @@ export default class CookiesService extends Service {
         return acc;
       }
 
-      if (domain && host.indexOf(domain) + domain.length !== host.length) {
+      if (domain && host.indexOf(domain) + domain.length !== (host.split(':')[0]).length) {
         return acc;
       }
 
