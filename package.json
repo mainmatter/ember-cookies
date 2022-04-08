@@ -29,7 +29,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.5.0",
-    "@embroider/test-setup": "0.50.2",
+    "@embroider/test-setup": "1.6.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "broccoli-asset-rev": "^3.0.0",
