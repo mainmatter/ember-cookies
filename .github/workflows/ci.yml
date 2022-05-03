@@ -22,8 +22,10 @@ jobs:
           node-version: 12.x
           cache: yarn
 
-      - run: yarn install
-      - run: yarn lint:js
+      - run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint:js
+        working-directory: packages/ember-cookies
 
   tests:
     name: Tests
@@ -61,9 +63,10 @@ jobs:
       - name: tests
         run: yarn test:one ${{ matrix.test-suite }}
         continue-on-error: ${{matrix.allow-failure}}
+        working-directory: packages/ember-cookies
 
   extra-tests:
-    name: Tests (Floating Dependenies)
+    name: Tests (Floating Dependencies)
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -79,3 +82,4 @@ jobs:
       - name: tests
         run: yarn test
         continue-on-error: true
+        working-directory: packages/ember-cookies
