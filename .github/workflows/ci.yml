@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
-    name: Lint
+  lint-addon:
+    name: Lint Addon
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -27,9 +27,28 @@ jobs:
           cache: yarn
 
       - run: yarn install --frozen-lockfile
+
       - name: Lint
-        run: yarn lint:js
+        run: yarn lint
         working-directory: packages/ember-cookies
+
+  lint-test-app:
+    name: Lint Test App
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12.x
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+        working-directory: packages/test-app
 
   tests:
     name: Tests
@@ -67,7 +86,7 @@ jobs:
       - name: tests
         run: yarn test:one ${{ matrix.test-suite }}
         continue-on-error: ${{matrix.allow-failure}}
-        working-directory: packages/ember-cookies
+        working-directory: packages/test-app
 
   extra-tests:
     name: Tests (Floating Dependencies)
@@ -86,4 +105,4 @@ jobs:
       - name: tests
         run: yarn test
         continue-on-error: true
-        working-directory: packages/ember-cookies
+        working-directory: packages/test-app

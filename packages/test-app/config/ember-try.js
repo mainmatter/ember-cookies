@@ -21,6 +21,7 @@ module.exports = function () {
             devDependencies: {
               'ember-data': '~3.4.0',
               'ember-source': '~3.4.0',
+              'ember-native-class-polyfill': '^1.0.6',
             },
           },
         },
