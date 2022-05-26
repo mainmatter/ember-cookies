@@ -2,11 +2,9 @@
 
 # compiled output
 /dist
-/tmp
 
 # dependencies
 /node_modules
-/bower_components
 
 # misc
 /.eslintcache
@@ -19,6 +17,6 @@ yarn-error.log
 testem.log
 .DS_Store
 
-# ember-try
-.node_modules.ember-try/
-package.json.ember-try
+# .md copies from release
+/CHANGELOG.md
+/README.md

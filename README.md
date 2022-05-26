@@ -60,6 +60,30 @@ The `cookies` service has methods for reading and writing cookies:
 * `exists(name)`: checks whether a cookie exists at all (even with a falsy
   value) and returns `true` if that is the case or `false` otherwise.
 
+## Testing
+
+`ember-cookies` exposes the `clearAllCookies` test helper that clears
+all known cookies to reset state before and/or after tests:
+
+```js
+import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
+import { clearAllCookies } from 'ember-cookies/test-support';
+
+module('Unit | Some Module', function (hooks) {
+  setupTest(hooks);
+
+  hooks.beforeEach(function () {
+    clearAllCookies();
+  });
+
+  // or you may wat to clear cookies after the test run
+  hooks.afterEach(function () {
+    clearAllCookies();
+  });
+});
+```
+
 ## License
 
 `ember-cookies` is developed by and &copy;
