@@ -15,7 +15,9 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {},
+  rules: {
+    'ember/no-classic-classes': 'off',
+  },
   overrides: [
     // node files
     {
@@ -24,11 +26,13 @@ module.exports = {
         '.eslintrc.js',
         '**/.eslintrc.js',
         '.prettierrc.js',
-        'index.js',
+        '.template-lintrc.js',
+        'ember-cli-build.js',
+        'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
       ],
-      excludedFiles: ['addon/**', 'addon-test-support/**'],
+      excludedFiles: ['app/**'],
       parserOptions: {
         sourceType: 'script',
       },
@@ -38,6 +42,12 @@ module.exports = {
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
+    },
+    // test files
+    {
+      files: ['tests/**/*-test.js'],
+      plugins: ['qunit'],
+      extends: ['plugin:qunit/recommended'],
     },
   ],
 };
