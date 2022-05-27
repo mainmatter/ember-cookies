@@ -31,7 +31,7 @@
     "prettier": "2.6.2"
   },
   "engines": {
-    "node": ">= 12.*"
+    "node": ">= 14.*"
   },
   "ember": {
     "edition": "octane"
