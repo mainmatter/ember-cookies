@@ -5,30 +5,51 @@
   "keywords": [
     "ember-addon"
   ],
+  "repository": "https://github.com/simplabs/ember-cookies",
   "license": "MIT",
   "author": "",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*",
+    "./test-support": "./dist/test-support/index.js",
+    "./addon-main.js": "./addon-main.js"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/simplabs/ember-cookies",
+  "files": [
+    "addon-main.js",
+    "dist"
+  ],
   "scripts": {
+    "build": "rollup --config",
+    "copyDoc": "cp ../../*.md .",
     "lint": "yarn lint:js",
     "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix"
+    "lint:js:fix": "eslint . --fix",
+    "prepublishOnly": "npm-run-all --aggregate-output --continue-on-error --parallel copyDoc build",
+    "start": "rollup --config --watch",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.26.3",
+    "@embroider/addon-shim": "^1.7.1",
     "ember-native-class-polyfill": "^1.0.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-proposal-decorators": "^7.18.2",
+    "@embroider/addon-dev": "^1.7.1",
+    "@rollup/plugin-babel": "^5.3.1",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ember": "^10.3.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "2.6.2"
+    "prettier": "2.6.2",
+    "rollup": "^2.74.1"
   },
   "engines": {
     "node": ">= 14.*"
@@ -37,8 +58,14 @@
     "edition": "octane"
   },
   "ember-addon": {
+    "main": "addon-main.js",
+    "type": "addon",
+    "version": 2,
     "versionCompatibility": {
       "ember": ">=3.4"
+    },
+    "app-js": {
+      "./services/cookies.js": "./dist/_app_/services/cookies.js"
     }
   }
 }

@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import clearAllCookies from 'ember-cookies/clear-all-cookies';
+import { clearAllCookies } from 'ember-cookies/test-support';
 
 function randomString() {
   return Math.random().toString(36).substring(2);
