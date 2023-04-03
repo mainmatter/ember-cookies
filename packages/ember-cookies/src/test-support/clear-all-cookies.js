@@ -1,5 +1,5 @@
 import { assert } from '@ember/debug';
-import { assign as emberAssign } from '@ember/polyfills';
+import emberAssign from 'ember-cookies/utils/assign';
 import { isEmpty } from '@ember/utils';
 import { serializeCookie } from '../utils/serialize-cookie';
 

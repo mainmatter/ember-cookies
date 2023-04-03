@@ -33,7 +33,8 @@
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.7.1"
+    "@embroider/addon-shim": "^1.7.1",
+    "@embroider/macros": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
