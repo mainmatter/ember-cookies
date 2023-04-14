@@ -67,7 +67,7 @@
     "request": "^2.88.2",
     "rsvp": "^4.8.5",
     "symlink-or-copy": "^1.1.8",
-    "webpack": "^5.70.0"
+    "webpack": "^5.76.0"
   },
   "fastbootDependencies": [
     "node-fetch",
