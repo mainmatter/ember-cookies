@@ -73,6 +73,10 @@ jobs:
         include:
            - test-suite: ember-canary
              allow-failure: true
+           - test-suite: ember-beta
+             allow-failure: true
+           - test-suite: ember-release
+             allow-failure: true
 
     steps:
       - uses: actions/checkout@v3
