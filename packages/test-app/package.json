@@ -25,6 +25,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.8.1",
+    "@ember/string": "^3.0.1",
     "@embroider/test-setup": "1.8.3",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
