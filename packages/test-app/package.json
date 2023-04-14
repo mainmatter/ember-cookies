@@ -70,6 +70,10 @@
     "symlink-or-copy": "^1.1.8",
     "webpack": "^5.70.0"
   },
+  "fastbootDependencies": [
+    "node-fetch",
+    "crypto"
+  ],
   "engines": {
     "node": ">= 14.*"
   },
