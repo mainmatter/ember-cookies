@@ -66,12 +66,13 @@ jobs:
           - ember-lts-3.28
           - ember-default
           - ember-release
-          - ember-beta
-          - ember-canary
           - embroider-safe
           - embroider-optimized
+        allow-failure: [false]
         include:
            - test-suite: ember-canary
+             allow-failure: true
+           - test-suite: ember-beta
              allow-failure: true
 
     steps:
