@@ -1,3 +1,7 @@
+# 1.0.0
+
+* **BREAKING** :boom: Drops Ember v3, supports Ember v5. Refer to [Github Releases](https://github.com/mainmatter/ember-cookies/releases)
+
 # 0.5.2
 
 * A bug was fixed that prevented usage in projects that are not using FastBoot,
