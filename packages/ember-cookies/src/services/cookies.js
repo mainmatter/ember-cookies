@@ -3,10 +3,8 @@ import { get } from '@ember/object';
 import { assert } from '@ember/debug';
 import { getOwner } from '@ember/application';
 import Service from '@ember/service';
-import { assign as emberAssign } from '@ember/polyfills';
 import { serializeCookie } from '../utils/serialize-cookie';
 const { keys } = Object;
-const assign = Object.assign || emberAssign;
 const DEFAULTS = { raw: false };
 const MAX_COOKIE_BYTE_LENGTH = 4096;
 
@@ -44,14 +42,14 @@ export default class CookiesService extends Service {
     }, {});
 
     let fastBootCookiesCache = this._fastBootCookiesCache || {};
-    fastBootCookies = assign({}, fastBootCookies, fastBootCookiesCache);
+    fastBootCookies = Object.assign({}, fastBootCookies, fastBootCookiesCache);
     this._fastBootCookiesCache = fastBootCookies;
 
     return this._filterCachedFastBootCookies(fastBootCookies);
   }
 
   read(name, options = {}) {
-    options = assign({}, DEFAULTS, options || {});
+    options = Object.assign({}, DEFAULTS, options || {});
     assert(
       'Domain, Expires, Max-Age, and Path options cannot be set when reading cookies',
       isEmpty(options.domain) &&
@@ -76,7 +74,7 @@ export default class CookiesService extends Service {
   }
 
   write(name, value, options = {}) {
-    options = assign({}, DEFAULTS, options || {});
+    options = Object.assign({}, DEFAULTS, options || {});
     assert(
       "Cookies cannot be set as signed as signed cookies would not be modifyable in the browser as it has no knowledge of the express server's signing key!",
       !options.signed
@@ -104,7 +102,7 @@ export default class CookiesService extends Service {
   }
 
   clear(name, options = {}) {
-    options = assign({}, options || {});
+    options = Object.assign({}, options || {});
     assert(
       'Expires, Max-Age, and raw options cannot be set when clearing cookies',
       isEmpty(options.expires) && isEmpty(options.maxAge) && isEmpty(options.raw)
@@ -159,7 +157,7 @@ export default class CookiesService extends Service {
 
   _cacheFastBootCookie(name, value, options = {}) {
     let fastBootCache = this._fastBootCookiesCache || {};
-    let cachedOptions = assign({}, options);
+    let cachedOptions = Object.assign({}, options);
 
     if (cachedOptions.maxAge) {
       let expires = new Date();
