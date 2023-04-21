@@ -1,9 +1,6 @@
 import { assert } from '@ember/debug';
-import { assign as emberAssign } from '@ember/polyfills';
 import { isEmpty } from '@ember/utils';
 import { serializeCookie } from '../utils/serialize-cookie';
-
-const assign = Object.assign || emberAssign;
 
 export default function clearAllCookies(options = {}) {
   assert('Cookies cannot be set to be HTTP-only from a browser!', !options.httpOnly);
@@ -11,7 +8,7 @@ export default function clearAllCookies(options = {}) {
     'Expires, Max-Age, and raw options cannot be set when clearing cookies',
     isEmpty(options.expires) && isEmpty(options.maxAge) && isEmpty(options.raw)
   );
-  options = assign({}, options, {
+  options = Object.assign({}, options, {
     expires: new Date(0),
   });
 
