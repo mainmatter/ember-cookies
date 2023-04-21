@@ -61,7 +61,7 @@
     "type": "addon",
     "version": 2,
     "versionCompatibility": {
-      "ember": ">=3.8"
+      "ember": ">=4.0"
     },
     "app-js": {
       "./services/cookies.js": "./dist/_app_/services/cookies.js"
