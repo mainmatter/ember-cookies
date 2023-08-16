@@ -50,7 +50,7 @@
     "ember-sinon": "5.0.0",
     "ember-source": "~5.1.0",
     "ember-source-channel-url": "^3.0.0",
-    "ember-try": "^2.0.0",
+    "ember-try": "^3.0.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ember": "^11.0.0",
