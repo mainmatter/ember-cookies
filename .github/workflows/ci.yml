@@ -9,9 +9,13 @@ on:
   schedule:
     - cron:  '0 3 * * *' # daily, at 3am
 
+env:
+  VOLTA_FEATURE_PNPM: 1
+
 concurrency:
   group: ci-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
+
 
 jobs:
   lint-addon:
@@ -20,17 +24,12 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
-      - run: yarn install --frozen-lockfile
-
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+      - uses: ./.github/actions/pnpm-setup
+      - name: Install dependencies
+        run: pnpm install
       - name: Lint
-        run: yarn lint
-        working-directory: packages/ember-cookies
+        run: pnpm lint:addon
 
   lint-test-app:
     name: Lint Test App
@@ -38,17 +37,12 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
-      - run: yarn install --frozen-lockfile
-
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+      - uses: ./.github/actions/pnpm-setup
+      - name: Install dependencies
+        run: pnpm install
       - name: Lint
-        run: yarn lint
-        working-directory: packages/test-app
+        run: pnpm lint:test-app
 
   tests:
     name: Tests
@@ -74,18 +68,13 @@ jobs:
              allow-failure: true
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
-      - run: yarn install
-
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+      - uses: ./.github/actions/pnpm-setup
+      - name: Install dependencies
+        run: pnpm install
       - name: tests
-        run: yarn test:one ${{ matrix.test-suite }}
+        run: pnpm test:test-app ${{ matrix.test-suite }}
         continue-on-error: ${{matrix.allow-failure}}
-        working-directory: packages/test-app
 
   extra-tests:
     name: Tests (Floating Dependencies)
@@ -93,15 +82,11 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
-      - run: yarn install --no-lockfile
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+      - uses: ./.github/actions/pnpm-setup
+      - name: Install dependencies
+        run: pnpm install --no-lockfile
 
       - name: tests
-        run: yarn test
+        run: pnpm test
         continue-on-error: true
-        working-directory: packages/test-app

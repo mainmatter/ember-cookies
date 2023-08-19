@@ -17,9 +17,9 @@
     "start": "concurrently start:addon start:test-app",
     "start:addon": "pnpm --filter ember-cookies start",
     "start:test-app": "pnpm --filter test-app start",
-    "test": "pnpm run test:test-app",
+    "test": "pnpm run test:test-app ember-default",
     "test:watch": "concurrently \"pnpm test:watch:test-app\" \"pnpm test:watch:addon\"",
-    "test:test-app": "pnpm --filter test-app test",
+    "test:test-app": "pnpm --filter test-app test:one",
     "test:watch:test-app": "pnpm --filter test-app test:watch",
     "test:watch:addon": "pnpm --filter ember-cookies start"
   },
