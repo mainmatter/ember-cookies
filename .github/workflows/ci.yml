@@ -59,13 +59,7 @@ jobs:
           - ember-default
           - ember-release
           - embroider-safe
-          - embroider-optimized
         allow-failure: [false]
-        include:
-           - test-suite: ember-canary
-             allow-failure: true
-           - test-suite: ember-beta
-             allow-failure: true
 
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
@@ -90,3 +84,36 @@ jobs:
       - name: tests
         run: pnpm test
         continue-on-error: true
+
+  allow-fail-try-scenarios:
+    name: ${{ matrix.test-suite }} - Allowed to fail
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pull-requests: write
+
+    strategy:
+      matrix:
+        test-suite:
+          - embroider-optimized
+          - ember-beta
+          - ember-canary
+        allow-failure: [true]
+
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+      - uses: ./.github/actions/pnpm-setup
+
+      - name: install dependencies
+        run: pnpm install
+
+      - name: Allowed to fail tests
+        id: allowed_to_fail_tests
+        run: pnpm test:test-app ${{ matrix.test-suite }}
+        continue-on-error: true
+
+      - uses: mainmatter/continue-on-error-comment@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          outcome: ${{ steps.allowed_to_fail_tests.outcome }}
+          test-id: ${{ matrix.workspace }} ${{ matrix.test-suite }}
