@@ -25,10 +25,10 @@
   "scripts": {
     "build": "rollup --config",
     "copyDoc": "cp ../../*.md .",
-    "lint": "yarn lint:js",
+    "lint": "concurrently \"pnpm lint:js\"",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "prepublishOnly": "npm-run-all --aggregate-output --continue-on-error --parallel copyDoc build",
+    "prepublishOnly": "concurrently \"pnpm copyDoc\" \"pnpm build\"",
     "start": "rollup --config --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
@@ -48,7 +48,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "2.8.8",
-    "rollup": "^2.74.1"
+    "rollup": "^2.74.1",
+    "concurrently": "*"
   },
   "engines": {
     "node": ">= 16.*"
