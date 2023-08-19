@@ -7,14 +7,14 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "concurrently lint:addon lint:test-app",
+    "lint": "concurrently \"pnpm lint:addon\" \"pnpm lint:test-app\"",
     "lint:addon": "pnpm --filter ember-cookies lint",
     "lint:test-app": "pnpm --filter test-app lint",
-    "lint:fix": "concurrently lint:fix:addon lint:fix:test-app",
+    "lint:fix": "concurrently \"pnpm lint:fix:addon\" \"pnpm lint:fix:test-app\"",
     "lint:fix:addon": "pnpm --filter ember-cookies lint:fix",
     "lint:fix:test-app": "pnpm --filter test-app lint:fix",
     "prepare": "pnpm --filter ember-cookies build",
-    "start": "concurrently start:addon start:test-app",
+    "start": "concurrently \"pnpm start:addon\" \"pnpm start:test-app\"",
     "start:addon": "pnpm --filter ember-cookies start",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm run test:test-app ember-default",
