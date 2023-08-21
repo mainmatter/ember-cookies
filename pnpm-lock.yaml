@@ -74,7 +74,7 @@ importers:
         version: 3.1.1
       '@ember/test-helpers':
         specifier: 3.2.0
-        version: 3.2.0(ember-source@5.1.2)(webpack@5.88.2)
+        version: 3.2.0(ember-source@5.2.0)(webpack@5.88.2)
       '@embroider/test-setup':
         specifier: 3.0.1
         version: 3.0.1
@@ -91,20 +91,20 @@ importers:
         specifier: 2.6.3
         version: 2.6.3(webpack@5.88.2)
       ember-cli:
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.2.0
+        version: 5.2.0
       ember-cli-babel:
         specifier: 7.26.11
         version: 7.26.11
       ember-cli-dependency-checker:
         specifier: 3.3.2
-        version: 3.3.2(ember-cli@5.1.0)
+        version: 3.3.2(ember-cli@5.2.0)
       ember-cli-fastboot:
         specifier: 4.1.1
         version: 4.1.1
       ember-cli-fastboot-testing:
         specifier: 0.6.1
-        version: 0.6.1(ember-source@5.1.2)(webpack@5.88.2)
+        version: 0.6.1(ember-source@5.2.0)(webpack@5.88.2)
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
@@ -134,16 +134,16 @@ importers:
         version: 7.0.0
       ember-qunit:
         specifier: 7.0.0
-        version: 7.0.0(@ember/test-helpers@3.2.0)(ember-source@5.1.2)(qunit@2.19.4)(webpack@5.88.2)
+        version: 7.0.0(@ember/test-helpers@3.2.0)(ember-source@5.2.0)(qunit@2.19.4)(webpack@5.88.2)
       ember-resolver:
         specifier: 10.1.1
-        version: 10.1.1(@ember/string@3.1.1)(ember-source@5.1.2)
+        version: 10.1.1(@ember/string@3.1.1)(ember-source@5.2.0)
       ember-sinon:
         specifier: 5.0.0
         version: 5.0.0
       ember-source:
-        specifier: 5.1.2
-        version: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+        specifier: 5.2.0
+        version: 5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
       ember-source-channel-url:
         specifier: 3.0.0
         version: 3.0.0
@@ -1557,7 +1557,7 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers@3.2.0(ember-source@5.1.2)(webpack@5.88.2):
+  /@ember/test-helpers@3.2.0(ember-source@5.2.0)(webpack@5.88.2):
     resolution: {integrity: sha512-3yWpPsK5O77tUdCwW3HayrAcdlRitIRYMvLIG69Pkal1JMIGdNYVTvJ2R1lenhQh2syd/WFmGM07vQuDAtotQw==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
@@ -1571,7 +1571,7 @@ packages:
       ember-auto-import: 2.6.3(webpack@5.88.2)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
-      ember-source: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+      ember-source: 5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
@@ -4922,14 +4922,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-dependency-checker@3.3.2(ember-cli@5.1.0):
+  /ember-cli-dependency-checker@3.3.2(ember-cli@5.2.0):
     resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.1.0
+      ember-cli: 5.2.0
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.4
@@ -4938,7 +4938,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-fastboot-testing@0.6.1(ember-source@5.1.2)(webpack@5.88.2):
+  /ember-cli-fastboot-testing@0.6.1(ember-source@5.2.0)(webpack@5.88.2):
     resolution: {integrity: sha512-nevPv77Wjk0Mslb0AF0wgHfbjki6Fi3/dapTrFz17WLX6n5maLr/MTL1hZcZdbT+69DHdgckCza8Z1WyxiUbBA==}
     engines: {node: 12.* || 14.* || 16.* || >= 18}
     peerDependencies:
@@ -4947,7 +4947,7 @@ packages:
       body-parser: 1.20.2
       ember-auto-import: 2.6.3(webpack@5.88.2)
       ember-cli-babel: 7.26.11
-      ember-source: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+      ember-source: 5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
       fastboot: 4.1.1
       json-fn: 1.1.1
       minimist: 1.2.8
@@ -5179,8 +5179,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli@5.1.0:
-    resolution: {integrity: sha512-TlnfO+V5lZqRQ7eGXt+P8q24Cu90GSXXAS/2NasaCtC1WY7eVzhfMsoNZiOw3Pe1CaB7i5fPDR8jAMsTwx8Tpg==}
+  /ember-cli@5.2.0:
+    resolution: {integrity: sha512-VZ/yhnM9tNWxZQQ+3dGe0MkUhkcS51W7WQWxlIr+NxlqG+WLe6qi8IKHElXwI3nY/Gbh5kSU5rF31WmGeGXjbg==}
     engines: {node: '>= 16'}
     hasBin: true
     dependencies:
@@ -5381,7 +5381,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@7.0.0(@ember/test-helpers@3.2.0)(ember-source@5.1.2)(qunit@2.19.4)(webpack@5.88.2):
+  /ember-qunit@7.0.0(@ember/test-helpers@3.2.0)(ember-source@5.2.0)(qunit@2.19.4)(webpack@5.88.2):
     resolution: {integrity: sha512-KhrndHYEXsHnXvmsGyJLJQ6VCudXaRs5dzPZBsdttZJIhsB6PmYAvq2Q+mh3GRDT/59T/sRDrB3FD3/lATS8aA==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
@@ -5389,14 +5389,14 @@ packages:
       ember-source: '>=4.0.0'
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 3.2.0(ember-source@5.1.2)(webpack@5.88.2)
+      '@ember/test-helpers': 3.2.0(ember-source@5.2.0)(webpack@5.88.2)
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
       ember-auto-import: 2.6.3(webpack@5.88.2)
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.1.0
-      ember-source: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+      ember-source: 5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
       qunit: 2.19.4
       resolve-package-path: 4.0.3
       silent-error: 1.1.1
@@ -5407,7 +5407,7 @@ packages:
       - webpack
     dev: true
 
-  /ember-resolver@10.1.1(@ember/string@3.1.1)(ember-source@5.1.2):
+  /ember-resolver@10.1.1(@ember/string@3.1.1)(ember-source@5.2.0):
     resolution: {integrity: sha512-y1zzn6C4YGJui+tJzcCKlsf1oSOSVAkRrvmg8OwqVIKnALKKb9ihx2qLCslHg8x0wJvJgMtDMXgrczvQrZW0Lw==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
@@ -5419,7 +5419,7 @@ packages:
     dependencies:
       '@ember/string': 3.1.1
       ember-cli-babel: 7.26.11
-      ember-source: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+      ember-source: 5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5460,8 +5460,8 @@ packages:
       - encoding
     dev: true
 
-  /ember-source@5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2):
-    resolution: {integrity: sha512-HTh8CANROxGuBIy/x3c42v4u4255IA55E40KXI3YABww/tV9N1vBRiXolkPcR8aSRDdl32UxL3wBV6/v8npxDQ==}
+  /ember-source@5.2.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2):
+    resolution: {integrity: sha512-rr8qLnyW6QV5N4ItwFluTH/SZ5W7uGsYL5GP0tYA2z9zFqD0g2TTJRBsaUPYFlHqcuUhWHiGg+xOyLcHZJOrig==}
     engines: {node: '>= 16.*'}
     peerDependencies:
       '@glimmer/component': ^1.1.2
