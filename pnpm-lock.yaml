@@ -19,58 +19,58 @@ importers:
         version: 1.8.6
     devDependencies:
       '@babel/core':
-        specifier: ^7.18.2
+        specifier: 7.22.10
         version: 7.22.10
       '@babel/eslint-parser':
-        specifier: ^7.17.0
+        specifier: 7.22.10
         version: 7.22.10(@babel/core@7.22.10)(eslint@8.47.0)
       '@babel/plugin-proposal-class-properties':
-        specifier: ^7.17.12
+        specifier: 7.18.6
         version: 7.18.6(@babel/core@7.22.10)
       '@babel/plugin-proposal-decorators':
-        specifier: ^7.18.2
+        specifier: 7.22.10
         version: 7.22.10(@babel/core@7.22.10)
       '@embroider/addon-dev':
-        specifier: ^3.0.0
+        specifier: 3.2.0
         version: 3.2.0(rollup@2.79.1)
       '@rollup/plugin-babel':
-        specifier: ^6.0.0
+        specifier: 6.0.3
         version: 6.0.3(@babel/core@7.22.10)(rollup@2.79.1)
       concurrently:
-        specifier: '*'
+        specifier: 8.2.0
         version: 8.2.0
       eslint:
-        specifier: ^8.0.0
+        specifier: 8.47.0
         version: 8.47.0
       eslint-config-prettier:
-        specifier: ^8.1.0
+        specifier: 8.10.0
         version: 8.10.0(eslint@8.47.0)
       eslint-plugin-ember:
-        specifier: ^11.0.0
+        specifier: 11.10.0
         version: 11.10.0(eslint@8.47.0)
       eslint-plugin-node:
-        specifier: ^11.1.0
+        specifier: 11.1.0
         version: 11.1.0(eslint@8.47.0)
       eslint-plugin-prettier:
-        specifier: ^4.0.0
+        specifier: 4.2.1
         version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@2.8.8)
       prettier:
         specifier: 2.8.8
         version: 2.8.8
       rollup:
-        specifier: ^2.74.1
+        specifier: 2.79.1
         version: 2.79.1
 
   packages/test-app:
     devDependencies:
       '@babel/eslint-parser':
-        specifier: ^7.17.0
+        specifier: 7.22.10
         version: 7.22.10(@babel/core@7.22.10)(eslint@8.47.0)
       '@ember/optional-features':
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       '@ember/string':
-        specifier: ^3.0.1
+        specifier: 3.1.1
         version: 3.1.1
       '@ember/test-helpers':
         specifier: 3.2.0
@@ -85,19 +85,19 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       broccoli-asset-rev:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       ember-auto-import:
-        specifier: ^2.4.0
+        specifier: 2.6.3
         version: 2.6.3(webpack@5.88.2)
       ember-cli:
-        specifier: ~5.1.0
+        specifier: 5.1.0
         version: 5.1.0
       ember-cli-babel:
-        specifier: ^7.26.3
+        specifier: 7.26.11
         version: 7.26.11
       ember-cli-dependency-checker:
-        specifier: ^3.2.0
+        specifier: 3.3.2
         version: 3.3.2(ember-cli@5.1.0)
       ember-cli-fastboot:
         specifier: 4.1.1
@@ -106,73 +106,73 @@ importers:
         specifier: 0.6.1
         version: 0.6.1(ember-source@5.1.2)(webpack@5.88.2)
       ember-cli-htmlbars:
-        specifier: ^6.0.0
+        specifier: 6.3.0
         version: 6.3.0
       ember-cli-inject-live-reload:
-        specifier: ^2.0.2
+        specifier: 2.1.0
         version: 2.1.0
       ember-cli-sri:
-        specifier: ^2.1.1
+        specifier: 2.1.1
         version: 2.1.1
       ember-cli-terser:
-        specifier: ^4.0.1
+        specifier: 4.0.2
         version: 4.0.2
       ember-cookies:
         specifier: 1.0.0
         version: link:../ember-cookies
       ember-disable-prototype-extensions:
-        specifier: ^1.1.3
+        specifier: 1.1.3
         version: 1.1.3
       ember-load-initializers:
-        specifier: ^2.1.2
+        specifier: 2.1.2
         version: 2.1.2(@babel/core@7.22.10)
       ember-maybe-import-regenerator:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0
       ember-page-title:
-        specifier: ^7.0.0
+        specifier: 7.0.0
         version: 7.0.0
       ember-qunit:
         specifier: 7.0.0
         version: 7.0.0(@ember/test-helpers@3.2.0)(ember-source@5.1.2)(qunit@2.19.4)(webpack@5.88.2)
       ember-resolver:
-        specifier: ^10.0.0
+        specifier: 10.1.1
         version: 10.1.1(@ember/string@3.1.1)(ember-source@5.1.2)
       ember-sinon:
         specifier: 5.0.0
         version: 5.0.0
       ember-source:
-        specifier: ~5.1.0
+        specifier: 5.1.2
         version: 5.1.2(@babel/core@7.22.10)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
       ember-source-channel-url:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       ember-try:
         specifier: 2.0.0
         version: 2.0.0
       eslint:
-        specifier: ^8.0.0
+        specifier: 8.47.0
         version: 8.47.0
       eslint-config-prettier:
-        specifier: ^8.1.0
+        specifier: 8.10.0
         version: 8.10.0(eslint@8.47.0)
       eslint-plugin-ember:
-        specifier: ^11.0.0
+        specifier: 11.10.0
         version: 11.10.0(eslint@8.47.0)
       eslint-plugin-node:
-        specifier: ^11.1.0
+        specifier: 11.1.0
         version: 11.1.0(eslint@8.47.0)
       eslint-plugin-prettier:
-        specifier: ^4.0.0
+        specifier: 4.2.1
         version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@2.8.8)
       eslint-plugin-qunit:
-        specifier: ^7.2.0
+        specifier: 7.3.4
         version: 7.3.4(eslint@8.47.0)
       glob:
-        specifier: ^10.0.0
+        specifier: 10.3.3
         version: 10.3.3
       loader.js:
-        specifier: ^4.7.0
+        specifier: 4.7.0
         version: 4.7.0
       prettier:
         specifier: 2.8.8
@@ -181,16 +181,16 @@ importers:
         specifier: 2.19.4
         version: 2.19.4
       request:
-        specifier: ^2.88.2
+        specifier: 2.88.2
         version: 2.88.2
       rsvp:
-        specifier: ^4.8.5
+        specifier: 4.8.5
         version: 4.8.5
       symlink-or-copy:
-        specifier: ^1.1.8
+        specifier: 1.3.1
         version: 1.3.1
       webpack:
-        specifier: ^5.70.0
+        specifier: 5.88.2
         version: 5.88.2
 
 packages:
