@@ -30,7 +30,8 @@
     "lint:js:fix": "eslint . --fix",
     "prepublishOnly": "concurrently \"pnpm copyDoc\" \"pnpm build\"",
     "start": "rollup --config --watch",
-    "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
+    "release": "npm publish"
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.7.1"
