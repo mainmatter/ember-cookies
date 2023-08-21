@@ -100,10 +100,10 @@ importers:
         specifier: ^3.2.0
         version: 3.3.2(ember-cli@5.1.0)
       ember-cli-fastboot:
-        specifier: ^4.0.0
+        specifier: 4.1.1
         version: 4.1.1
       ember-cli-fastboot-testing:
-        specifier: ^0.6.0
+        specifier: 0.6.1
         version: 0.6.1(ember-source@5.1.2)(webpack@5.88.2)
       ember-cli-htmlbars:
         specifier: ^6.0.0
