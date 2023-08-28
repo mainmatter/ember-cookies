@@ -37,20 +37,20 @@
     "@embroider/addon-shim": "^1.7.1"
   },
   "devDependencies": {
-    "@babel/core": "7.22.10",
-    "@babel/eslint-parser": "7.22.10",
+    "@babel/core": "7.22.11",
+    "@babel/eslint-parser": "7.22.11",
     "@babel/plugin-proposal-class-properties": "7.18.6",
     "@babel/plugin-proposal-decorators": "7.22.10",
     "@embroider/addon-dev": "4.1.0",
     "@rollup/plugin-babel": "6.0.3",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-ember": "11.10.0",
+    "eslint-plugin-ember": "11.11.1",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8",
     "rollup": "2.79.1",
-    "concurrently": "8.2.0"
+    "concurrently": "8.2.1"
   },
   "engines": {
     "node": ">= 16.*"
