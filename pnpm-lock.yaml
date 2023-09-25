@@ -169,8 +169,8 @@ importers:
         specifier: 7.3.4
         version: 7.3.4(eslint@8.50.0)
       glob:
-        specifier: 10.3.4
-        version: 10.3.4
+        specifier: 10.3.7
+        version: 10.3.7
       loader.js:
         specifier: 4.7.0
         version: 4.7.0
@@ -6875,8 +6875,8 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: true
 
-  /glob@10.3.4:
-    resolution: {integrity: sha512-6LFElP3A+i/Q8XQKEvZjkEWEOTgAIALR9AO2rwT8bgPhDd1anmqDJDZ6lLddI4ehxxxR1S5RIqKe1uapMQfYaQ==}
+  /glob@10.3.7:
+    resolution: {integrity: sha512-wCMbE1m9Nx5yD9LYtgsVWq5VhHlk5WzJirw594qZR6AIvQYuHrdDtIktUVjQItalD53y7dqoedu9xP0u0WaxIQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
