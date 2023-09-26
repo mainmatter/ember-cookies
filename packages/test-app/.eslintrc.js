@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     'ember/no-classic-classes': 'off',
+    'qunit/require-expect': ['error', 'except-simple'],
   },
   overrides: [
     // node files
