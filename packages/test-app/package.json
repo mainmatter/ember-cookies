@@ -60,7 +60,7 @@
     "eslint-plugin-qunit": "8.0.0",
     "glob": "10.3.10",
     "loader.js": "4.7.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.3",
     "qunit": "2.20.0",
     "request": "2.88.2",
     "rsvp": "4.8.5",
