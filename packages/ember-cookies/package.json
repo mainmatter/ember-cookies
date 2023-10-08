@@ -43,14 +43,14 @@
     "@babel/plugin-proposal-decorators": "7.23.0",
     "@embroider/addon-dev": "4.1.1",
     "@rollup/plugin-babel": "6.0.3",
+    "concurrently": "8.2.1",
     "eslint": "8.50.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-ember": "11.11.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "prettier": "2.8.8",
-    "rollup": "2.79.1",
-    "concurrently": "8.2.1"
+    "eslint-plugin-prettier": "5.0.0",
+    "prettier": "3.0.3",
+    "rollup": "2.79.1"
   },
   "engines": {
     "node": ">= 16.*"
