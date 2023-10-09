@@ -44,7 +44,7 @@
     "@embroider/addon-dev": "4.1.1",
     "@rollup/plugin-babel": "6.0.4",
     "concurrently": "8.2.1",
-    "eslint": "8.50.0",
+    "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-ember": "11.11.1",
     "eslint-plugin-node": "11.1.0",
