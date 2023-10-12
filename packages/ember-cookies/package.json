@@ -8,6 +8,7 @@
   "repository": "https://github.com/simplabs/ember-cookies",
   "license": "MIT",
   "author": "",
+  "types": "./index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*",
@@ -43,7 +44,6 @@
     "@babel/plugin-proposal-decorators": "7.23.0",
     "@embroider/addon-dev": "4.1.1",
     "@rollup/plugin-babel": "6.0.4",
-    "@types/ember": "^4.0.6",
     "concurrently": "8.2.1",
     "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
