@@ -121,7 +121,7 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       ember-cookies:
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../ember-cookies
       ember-disable-prototype-extensions:
         specifier: 1.1.3

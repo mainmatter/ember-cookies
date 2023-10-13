@@ -1,3 +1,7 @@
+# 1.1.0
+
+* **Enhancement** :rocket: Added type definitions [Github Releases](https://github.com/mainmatter/ember-cookies/releases)
+
 # 1.0.0
 
 * **BREAKING** :boom: Drops Ember v3, supports Ember v5. Refer to [Github Releases](https://github.com/mainmatter/ember-cookies/releases)
