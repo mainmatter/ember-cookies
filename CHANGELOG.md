@@ -1,3 +1,7 @@
+# 1.1.1
+
+* **Fix** :bug: Fixed export type for clearAllCookies [Github Releases](https://github.com/mainmatter/ember-cookies/releases)
+
 # 1.1.0
 
 * **Enhancement** :rocket: Added type definitions [Github Releases](https://github.com/mainmatter/ember-cookies/releases)
