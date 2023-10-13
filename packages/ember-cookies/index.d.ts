@@ -9,7 +9,7 @@ type Options = {
 }
 
 declare module 'ember-cookies/test-support' {
-  export default function clearAllCookies(param?: Options): void
+  export function clearAllCookies(param?: Options): void
 }
 
 declare module "ember-cookies/services/cookies" {
