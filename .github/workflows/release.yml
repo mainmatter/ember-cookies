@@ -5,6 +5,9 @@ on:
     tags:
       - '*'
 
+env:
+  VOLTA_FEATURE_PNPM: 1
+
 jobs:
   release:
     name: Release
