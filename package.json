@@ -24,7 +24,7 @@
     "test:watch:addon": "pnpm --filter ember-cookies start"
   },
   "devDependencies": {
-    "concurrently": "8.2.1"
+    "concurrently": "8.2.2"
   },
   "volta": {
     "node": "18.18.2",
