@@ -8,7 +8,6 @@
   "repository": "https://github.com/simplabs/ember-cookies",
   "license": "MIT",
   "author": "",
-  "types": "./index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*",
@@ -36,7 +35,8 @@
     "release": "npm publish"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.7.1"
+    "@embroider/addon-shim": "^1.7.1",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.23.2",
