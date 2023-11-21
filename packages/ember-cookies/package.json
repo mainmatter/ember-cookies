@@ -10,10 +10,26 @@
   "author": "",
   "types": "./index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*",
-    "./test-support": "./dist/test-support/index.js",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./index.d.ts",
+      "default": "./dist/*"
+    },
+    "./test-support": {
+      "types": "./index.d.ts",
+      "default": "./dist/test-support/index.js"
+    },
     "./addon-main.js": "./addon-main.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./index.d.ts"
+      ]
+    }
   },
   "directories": {
     "doc": "doc",
