@@ -37,8 +37,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.23.3)(rollup@2.79.1)
       '@types/ember':
-        specifier: 4.0.9
-        version: 4.0.9(@babel/core@7.23.3)
+        specifier: 4.0.10
+        version: 4.0.10(@babel/core@7.23.3)
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
@@ -94,14 +94,14 @@ importers:
         specifier: 2.6.3
         version: 2.6.3(webpack@5.89.0)
       ember-cli:
-        specifier: 5.4.0
-        version: 5.4.0
+        specifier: 5.4.1
+        version: 5.4.1
       ember-cli-babel:
         specifier: 8.2.0
         version: 8.2.0(@babel/core@7.23.3)
       ember-cli-dependency-checker:
         specifier: 3.3.2
-        version: 3.3.2(ember-cli@5.4.0)
+        version: 3.3.2(ember-cli@5.4.1)
       ember-cli-fastboot:
         specifier: 4.1.2
         version: 4.1.2
@@ -2280,8 +2280,8 @@ packages:
       '@types/node': 20.9.0
     dev: true
 
-  /@types/ember@4.0.9(@babel/core@7.23.3):
-    resolution: {integrity: sha512-Bv+yTAISbXlX2I5f9jdSZXf70Pv13KoNCVQsRw6/L/ayk70CGsHxFgAz8+5sK5yNwxx3taFbjil66kU7wk5zCQ==}
+  /@types/ember@4.0.10(@babel/core@7.23.3):
+    resolution: {integrity: sha512-wASNwm5qp7Q03Hr7cYUq1zhZ0k9nqqA5r/rWYwscax2sKwP2higNk+zy0hA+HhyweyNqYumwh9jZN9vxOyFaFA==}
     dependencies:
       '@types/ember__application': 4.0.10(@babel/core@7.23.3)
       '@types/ember__array': 4.0.8(@babel/core@7.23.3)
@@ -2309,7 +2309,7 @@ packages:
     resolution: {integrity: sha512-j4hH1qXGyO90oO1yd7swtSsZVVj6EvDdxm0xOvD8TH++YUgBEtDw5Rm9axN3eGO2MXkz266A5k4MpZQlzAMa0g==}
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.23.3)
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
       '@types/ember__engine': 4.0.9(@babel/core@7.23.3)
       '@types/ember__object': 4.0.10(@babel/core@7.23.3)
       '@types/ember__owner': 4.0.8
@@ -2322,7 +2322,7 @@ packages:
   /@types/ember__array@4.0.8(@babel/core@7.23.3):
     resolution: {integrity: sha512-EEJBDd8IsWVMmfU4wiWR3uu/UH+jIEvKiN4ULvpp+TYddp83Fzj8T78PIjRgPp0iyCQ7PBPyV1WjqbHAqB35MQ==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
       '@types/ember__object': 4.0.10(@babel/core@7.23.3)
     transitivePeerDependencies:
       - '@babel/core'
@@ -2332,7 +2332,7 @@ packages:
   /@types/ember__component@4.0.20(@babel/core@7.23.3):
     resolution: {integrity: sha512-40S/fcY2KQkQivP2GihcF/ZgwW6JO/ZiZANMz97ZTy3R/t85qBmp+/MugUqng4PxjaNBEEOuvpCMqDmin5Jl3g==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
       '@types/ember__object': 4.0.10(@babel/core@7.23.3)
     transitivePeerDependencies:
       - '@babel/core'
@@ -2375,7 +2375,7 @@ packages:
   /@types/ember__object@4.0.10(@babel/core@7.23.3):
     resolution: {integrity: sha512-J5/IFY02iYi+df89NAmKnZljOnqPyW/ZIdcaZW8oz1PVLmi1SjbPMu+gGLa7v0RyAa/ZdUF0qQMMCDL8CLyXGA==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
       '@types/rsvp': 4.0.7
     transitivePeerDependencies:
       - '@babel/core'
@@ -2393,7 +2393,7 @@ packages:
   /@types/ember__routing@4.0.18(@babel/core@7.23.3):
     resolution: {integrity: sha512-Deu2dBBLgeo68C4PbHVEJUjSzXY4SC793mnFh3DwpdsZ7/jNKcbuV1L/et5v+EHU6L5SuyR7WnS/MnkIVsP7Kw==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
       '@types/ember__controller': 4.0.10(@babel/core@7.23.3)
       '@types/ember__object': 4.0.10(@babel/core@7.23.3)
       '@types/ember__service': 4.0.7(@babel/core@7.23.3)
@@ -2405,7 +2405,7 @@ packages:
   /@types/ember__runloop@4.0.8(@babel/core@7.23.3):
     resolution: {integrity: sha512-odNg8x5rWGlKcrig8QJvF3YmZmQKwLP/RIuRbksCK8dZJ5JfVI7BC7MZpyLsTDwY6OBHajZ/1plGM+2BAiyL7Q==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -2440,7 +2440,7 @@ packages:
   /@types/ember__utils@4.0.6(@babel/core@7.23.3):
     resolution: {integrity: sha512-Wtte/RJ93q1cz7CgCdGqMwqPsvf9W5P9mVUBAs8kGF6j2dHV0ajRLtRwrDcMjjsFFq6X7dKOOBFErU+IFQQ6Xw==}
     dependencies:
-      '@types/ember': 4.0.9(@babel/core@7.23.3)
+      '@types/ember': 4.0.10(@babel/core@7.23.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -5202,14 +5202,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-dependency-checker@3.3.2(ember-cli@5.4.0):
+  /ember-cli-dependency-checker@3.3.2(ember-cli@5.4.1):
     resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.4.0
+      ember-cli: 5.4.1
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.8
@@ -5459,8 +5459,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli@5.4.0:
-    resolution: {integrity: sha512-00RfyeDGTo9OtsmxbIqJIKM0wZvvOGAn1w4A9hFrENcuE7I3HKCb3QYKLHLXywG91fTsWbmXRfCL1kQ5pOva4A==}
+  /ember-cli@5.4.1:
+    resolution: {integrity: sha512-+jwp63OPT0zkUnXP563DkIwb1GiI6kGYHg6DyzJKY48BCdevqcgxsMFn8/RENXoF7krg18A5B9cSa8Y1v15tIw==}
     engines: {node: '>= 18'}
     hasBin: true
     dependencies:
