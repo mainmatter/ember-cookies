@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - 'v*'
-  pull_request: {}
+  pull_request_target: {}
   schedule:
     - cron:  '0 3 * * *' # daily, at 3am
 
@@ -15,7 +15,9 @@ env:
 concurrency:
   group: ci-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
-
+    
+permissions:
+  pull-requests: write
 
 jobs:
   lint-addon:
@@ -89,8 +91,6 @@ jobs:
     name: ${{ matrix.test-suite }} - Allowed to fail
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      pull-requests: write
 
     strategy:
       matrix:
