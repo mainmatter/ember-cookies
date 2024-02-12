@@ -31,8 +31,8 @@ importers:
         specifier: 7.23.9
         version: 7.23.9(@babel/core@7.23.9)
       '@embroider/addon-dev':
-        specifier: 4.2.0
-        version: 4.2.0(rollup@2.79.1)
+        specifier: 4.2.1
+        version: 4.2.1(rollup@2.79.1)
       '@rollup/plugin-babel':
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.23.9)(rollup@2.79.1)
@@ -1689,8 +1689,8 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/addon-dev@4.2.0(rollup@2.79.1):
-    resolution: {integrity: sha512-sXCTu4KAdjBv0gf8bglFirYFe4n0sfshszBoD3uRbX0VMVxfX1Yy6+Op5kOHcj3y9aD/MsxSDhYF7but8N/sRw==}
+  /@embroider/addon-dev@4.2.1(rollup@2.79.1):
+    resolution: {integrity: sha512-oMNlVqsqNjtNu7sFGGgo4igOy+Xa7g1I1aXMf7XRbYKWBCiYKX7C7lDKZ65qgsEpRKV3LtbC+XIYiGfHiqhFAg==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
     dependencies:
