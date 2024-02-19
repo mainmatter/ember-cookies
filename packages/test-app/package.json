@@ -61,7 +61,7 @@
     "glob": "10.3.10",
     "loader.js": "4.7.0",
     "prettier": "3.2.5",
-    "qunit": "2.20.0",
+    "qunit": "2.20.1",
     "request": "2.88.2",
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
