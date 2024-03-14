@@ -4,7 +4,7 @@ runs:
   using: "composite"
   steps:
     - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-    - uses: volta-cli/action@d253558a6e356722728a10e9a469190de21a83ef # v4
+    - uses: volta-cli/action@2d68418f32546fd191eb666e232b321d5726484d # v4
     - name: Get pnpm store directory
       shell: bash
       run: |
