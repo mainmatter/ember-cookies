@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
       - uses: ./.github/actions/pnpm-setup
       - name: Install dependencies
         run: pnpm install
@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
       - uses: ./.github/actions/pnpm-setup
       - name: Install dependencies
         run: pnpm install
@@ -57,7 +57,7 @@ jobs:
         allow-failure: [false]
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
       - uses: ./.github/actions/pnpm-setup
       - name: Install dependencies
         run: pnpm install
@@ -71,7 +71,7 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
       - uses: ./.github/actions/pnpm-setup
       - name: Install dependencies
         run: pnpm install --no-lockfile
@@ -96,7 +96,7 @@ jobs:
         allow-failure: [true]
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
       - uses: ./.github/actions/pnpm-setup
 
       - name: install dependencies
