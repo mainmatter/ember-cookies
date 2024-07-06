@@ -45,6 +45,7 @@ jobs:
     timeout-minutes: 20
 
     strategy:
+      fail-fast: false
       matrix:
         test-suite:
           - ember-4.0
@@ -88,6 +89,7 @@ jobs:
       pull-requests: write
 
     strategy:
+      fail-fast: false
       matrix:
         test-suite:
           - embroider-optimized
