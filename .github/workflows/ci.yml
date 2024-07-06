@@ -5,17 +5,12 @@ on:
     branches:
       - master
       - 'v*'
-  pull_request_target: {}
+  pull_request: {}
   schedule:
     - cron:  '0 3 * * *' # daily, at 3am
 
 env:
   VOLTA_FEATURE_PNPM: 1
-
-concurrency:
-  group: ci-${{ github.head_ref || github.ref }}
-  cancel-in-progress: true
-
 
 jobs:
   lint-addon:
