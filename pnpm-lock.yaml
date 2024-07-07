@@ -118,8 +118,8 @@ importers:
         specifier: 3.3.2
         version: 3.3.2(ember-cli@5.7.0)
       ember-cli-fastboot:
-        specifier: 4.1.2
-        version: 4.1.2
+        specifier: 4.1.5
+        version: 4.1.5(ember-source@5.7.0)
       ember-cli-fastboot-testing:
         specifier: 0.6.1
         version: 0.6.1(ember-source@5.7.0)(webpack@5.90.3)
@@ -5764,7 +5764,7 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
       '@babel/core': 7.24.7
-      '@babel/helper-compilation-targets': 7.23.6
+      '@babel/helper-compilation-targets': 7.24.7
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.24.7)
       '@babel/plugin-proposal-decorators': 7.24.7(@babel/core@7.24.7)
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.24.7)
@@ -5876,9 +5876,11 @@ packages:
       - webpack
     dev: true
 
-  /ember-cli-fastboot@4.1.2:
-    resolution: {integrity: sha512-cC2ET8AbRTssA4sg9qF9KLX9N/Xnwa7kS0PKZADMMOUXtuBF4jmgnXsjzlvIE+lgWcwK4tc6udgwpMeNMkOg7w==}
-    engines: {node: 14.* || 16.* || >=18}
+  /ember-cli-fastboot@4.1.5(ember-source@5.7.0):
+    resolution: {integrity: sha512-XVigHzn+xXMqvovdrPNQHXRCzVOkU78ij6adU8Qt7PAaF3stR9oPh/35f30aJ2vcL6jwR72glnuCyXpm3EL22A==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      ember-source: '>=3.16'
     dependencies:
       broccoli-concat: 4.2.5
       broccoli-file-creator: 2.1.1
@@ -5890,7 +5892,8 @@ packages:
       ember-cli-lodash-subset: 2.0.1
       ember-cli-preprocess-registry: 3.3.0
       ember-cli-version-checker: 5.1.2
-      fastboot: 4.1.2
+      ember-source: 5.7.0(@babel/core@7.24.7)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.90.3)
+      fastboot: 4.1.5
       fastboot-express-middleware: 4.1.2
       fastboot-transform: 0.1.3
       fs-extra: 10.1.0
@@ -7240,6 +7243,24 @@ packages:
 
   /fastboot@4.1.2:
     resolution: {integrity: sha512-VJLmF0xdCNwIIuA7DQtN1KTAKfEGsbZGJ0cfKh64h6DeMh3Fhr2FCCxkPh8zYqGoqzjXFdFbtk60WS3f6HKqBg==}
+    engines: {node: 12.* || 14.* || >=16}
+    dependencies:
+      chalk: 4.1.2
+      cookie: 0.4.2
+      debug: 4.3.4
+      jsdom: 19.0.0
+      resolve: 1.22.8
+      simple-dom: 1.4.0
+      source-map-support: 0.5.21
+    transitivePeerDependencies:
+      - bufferutil
+      - canvas
+      - supports-color
+      - utf-8-validate
+    dev: true
+
+  /fastboot@4.1.5:
+    resolution: {integrity: sha512-2FkJWrpxgJjy5kLb3KrYp0pKdB4WgT/6qxtQO7ozYtQqMBOAARMnp59xp/Hdosa1cE2jslZgwDAv3v11OlQfAw==}
     engines: {node: 12.* || 14.* || >=16}
     dependencies:
       chalk: 4.1.2
