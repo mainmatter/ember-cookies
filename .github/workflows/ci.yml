@@ -52,6 +52,7 @@ jobs:
           - ember-lts-4.4
           - ember-lts-4.8
           - ember-4.12
+          - ember-lts-5.8
           - ember-default
           - ember-release
           - embroider-safe
