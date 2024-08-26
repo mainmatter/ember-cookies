@@ -289,6 +289,17 @@ module('CookiesService', function (hooks) {
           this.cookies.write(COOKIE_NAME, 'test', { secure: true });
         });
 
+        test('sets the partitioned flag', function (assert) {
+          assert.expect(1);
+          defineProperty(this.fakeDocument, 'cookie', {
+            set(value) {
+              assert.ok(value.includes('; Partitioned'));
+            },
+          });
+
+          this.cookies.write(COOKIE_NAME, 'test', { partitioned: true });
+        });
+
         test('sets the path', function (assert) {
           assert.expect(1);
           defineProperty(this.fakeDocument, 'cookie', {
