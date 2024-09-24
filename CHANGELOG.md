@@ -1,3 +1,5 @@
+# Changelog
+
 # 1.1.2
 
 * **Fix** chore(ci): use pull_request_target event to allow continue-on-error-comment to work for forks by @BobrImperator in https://github.com/mainmatter/ember-cookies/pull/901
