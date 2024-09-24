@@ -9,23 +9,25 @@
   "scripts": {
     "lint": "concurrently \"pnpm lint:addon\" \"pnpm lint:test-app\"",
     "lint:addon": "pnpm --filter ember-cookies lint",
-    "lint:test-app": "pnpm --filter test-app lint",
     "lint:fix": "concurrently \"pnpm lint:fix:addon\" \"pnpm lint:fix:test-app\"",
     "lint:fix:addon": "pnpm --filter ember-cookies lint:fix",
     "lint:fix:test-app": "pnpm --filter test-app lint:fix",
+    "lint:test-app": "pnpm --filter test-app lint",
     "prepare": "pnpm --filter ember-cookies build",
     "start": "concurrently \"pnpm start:addon\" \"pnpm start:test-app\"",
     "start:addon": "pnpm --filter ember-cookies start",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm run test:test-app ember-default",
-    "test:watch": "concurrently \"pnpm test:watch:test-app\" \"pnpm test:watch:addon\"",
     "test:test-app": "pnpm --filter test-app test:one",
-    "test:watch:test-app": "pnpm --filter test-app test:watch",
-    "test:watch:addon": "pnpm --filter ember-cookies start"
+    "test:watch": "concurrently \"pnpm test:watch:test-app\" \"pnpm test:watch:addon\"",
+    "test:watch:addon": "pnpm --filter ember-cookies start",
+    "test:watch:test-app": "pnpm --filter test-app test:watch"
   },
   "devDependencies": {
-    "concurrently": "8.2.2"
+    "concurrently": "8.2.2",
+    "release-plan": "^0.9.0"
   },
+  "packageManager": "pnpm@9.11.0",
   "volta": {
     "node": "20.17.0",
     "pnpm": "9.11.0"
