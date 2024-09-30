@@ -52,7 +52,7 @@
     "ember-qunit": "8.1.0",
     "ember-resolver": "13.0.2",
     "ember-sinon": "5.0.0",
-    "ember-source": "5.11.1",
+    "ember-source": "5.12.0",
     "ember-source-channel-url": "3.0.0",
     "ember-try": "3.0.0",
     "eslint": "9.11.1",
@@ -69,7 +69,7 @@
     "request": "2.88.2",
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
-    "webpack": "5.94.0"
+    "webpack": "5.95.0"
   },
   "fastbootDependencies": [
     "node-fetch",
