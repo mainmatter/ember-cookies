@@ -24,6 +24,9 @@ export const serializeCookie = (name, value, options = {}) => {
   if (!isEmpty(options.sameSite)) {
     cookie = `${cookie}; SameSite=${options.sameSite}`;
   }
+  if (options.partitioned) {
+    cookie = `${cookie}; Partitioned`;
+  }
 
   return cookie;
 };
