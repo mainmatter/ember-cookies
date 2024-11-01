@@ -1,5 +1,28 @@
 # Changelog
 
+## Release (2024-11-01)
+
+ember-cookies 1.2.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-cookies`, `test-app`
+  * [#972](https://github.com/mainmatter/ember-cookies/pull/972) Support Partitioned Cookies ([@Gaurav0](https://github.com/Gaurav0))
+
+#### :house: Internal
+* Other
+  * [#986](https://github.com/mainmatter/ember-cookies/pull/986) chore(release): use release-plan ([@BobrImperator](https://github.com/BobrImperator))
+  * [#946](https://github.com/mainmatter/ember-cookies/pull/946) chore(ci): strategy.fail-fast=false ([@BobrImperator](https://github.com/BobrImperator))
+  * [#945](https://github.com/mainmatter/ember-cookies/pull/945) chore: ci fixes ([@BobrImperator](https://github.com/BobrImperator))
+* `test-app`
+  * [#947](https://github.com/mainmatter/ember-cookies/pull/947) chore(ci): add ember-lts-5.8 scenario ([@BobrImperator](https://github.com/BobrImperator))
+  * [#949](https://github.com/mainmatter/ember-cookies/pull/949) chore(deps): remove ember-data ([@BobrImperator](https://github.com/BobrImperator))
+* `ember-cookies`, `test-app`
+  * [#944](https://github.com/mainmatter/ember-cookies/pull/944) chore(deps): migrate eslint to new configuration syntax ([@BobrImperator](https://github.com/BobrImperator))
+
+#### Committers: 2
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+- Gaurav Munjal ([@Gaurav0](https://github.com/Gaurav0))
+
 # 1.1.2
 
 * **Fix** chore(ci): use pull_request_target event to allow continue-on-error-comment to work for forks by @BobrImperator in https://github.com/mainmatter/ember-cookies/pull/901
