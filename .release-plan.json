@@ -1,0 +1,21 @@
+{
+  "solution": {
+    "ember-cookies": {
+      "impact": "minor",
+      "oldVersion": "1.1.2",
+      "newVersion": "1.2.0",
+      "constraints": [
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./packages/ember-cookies/package.json"
+    }
+  },
+  "description": "## Release (2024-11-01)\n\nember-cookies 1.2.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-cookies`, `test-app`\n  * [#972](https://github.com/mainmatter/ember-cookies/pull/972) Support Partitioned Cookies ([@Gaurav0](https://github.com/Gaurav0))\n\n#### :house: Internal\n* Other\n  * [#986](https://github.com/mainmatter/ember-cookies/pull/986) chore(release): use release-plan ([@BobrImperator](https://github.com/BobrImperator))\n  * [#946](https://github.com/mainmatter/ember-cookies/pull/946) chore(ci): strategy.fail-fast=false ([@BobrImperator](https://github.com/BobrImperator))\n  * [#945](https://github.com/mainmatter/ember-cookies/pull/945) chore: ci fixes ([@BobrImperator](https://github.com/BobrImperator))\n* `test-app`\n  * [#947](https://github.com/mainmatter/ember-cookies/pull/947) chore(ci): add ember-lts-5.8 scenario ([@BobrImperator](https://github.com/BobrImperator))\n  * [#949](https://github.com/mainmatter/ember-cookies/pull/949) chore(deps): remove ember-data ([@BobrImperator](https://github.com/BobrImperator))\n* `ember-cookies`, `test-app`\n  * [#944](https://github.com/mainmatter/ember-cookies/pull/944) chore(deps): migrate eslint to new configuration syntax ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 2\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n- Gaurav Munjal ([@Gaurav0](https://github.com/Gaurav0))\n"
+}
