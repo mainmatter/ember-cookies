@@ -18,6 +18,7 @@
     "start:addon": "pnpm --filter ember-cookies start",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm run test:test-app ember-default",
+    "test:all": "pnpm --filter test-app test:all",
     "test:test-app": "pnpm --filter test-app test:one",
     "test:watch": "concurrently \"pnpm test:watch:test-app\" \"pnpm test:watch:addon\"",
     "test:watch:addon": "pnpm --filter ember-cookies start",
