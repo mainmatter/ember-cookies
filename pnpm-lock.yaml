@@ -34,8 +34,8 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.25.8)
       '@embroider/addon-dev':
-        specifier: 6.0.1
-        version: 6.0.1(rollup@2.79.2)
+        specifier: 7.0.0
+        version: 7.0.0(rollup@2.79.2)
       '@eslint/eslintrc':
         specifier: 3.1.0
         version: 3.1.0
@@ -1030,8 +1030,8 @@ packages:
     resolution: {integrity: sha512-bb9h95ktG2wKY9+ja1sdsFBdOms2lB19VWs8wmNpzgHv1NCetonBoV5jHBV4DHt0uS1tg9z66cZqhUVlYs96KQ==}
     engines: {node: 10.* || 12.* || >= 14.*}
 
-  '@embroider/addon-dev@6.0.1':
-    resolution: {integrity: sha512-0dOvwrETKHQtzLuYQ9nAPSbWWBvf4DQzy8yR35SAKqFYO+P7xEqK6HcEdHFkjs6+wUyhSXwAoIEbNTDJLv4d6w==}
+  '@embroider/addon-dev@7.0.0':
+    resolution: {integrity: sha512-jxRh++d2YXnEAjPxvjHGsTqx/Gd9U3LDeuLYBhLW6wzXakCyvU3K6V7jbYfx5fAxbdGkr2jFIp2gmGEsai2fpQ==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
     peerDependencies:
@@ -2665,6 +2665,9 @@ packages:
 
   content-tag@2.0.2:
     resolution: {integrity: sha512-qHRyTp02dgzRK2tsCFxZ1H289bZOuSLNpupr6prvnSFq4SFPmNlBKbbE5PCMb+8+Z1a1z+yCVtXvQIGUCCa3lQ==}
+
+  content-tag@3.0.0:
+    resolution: {integrity: sha512-HxWPmF9hzehv5PV7TSK7QSzlVBhmwQA8NgBrXmL+fqXfM3L1r3ResAPzeiGbxra3Zw6U3gdhw3cIDJADQnuCVQ==}
 
   content-type@1.0.5:
     resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
@@ -6738,7 +6741,7 @@ snapshots:
 
   '@babel/helper-annotate-as-pure@7.25.7':
     dependencies:
-      '@babel/types': 7.25.8
+      '@babel/types': 7.26.0
 
   '@babel/helper-annotate-as-pure@7.25.9':
     dependencies:
@@ -6746,8 +6749,8 @@ snapshots:
 
   '@babel/helper-builder-binary-assignment-operator-visitor@7.24.7':
     dependencies:
-      '@babel/traverse': 7.25.7
-      '@babel/types': 7.25.8
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6788,7 +6791,7 @@ snapshots:
       '@babel/helper-optimise-call-expression': 7.25.7
       '@babel/helper-replace-supers': 7.25.7(@babel/core@7.25.8)
       '@babel/helper-skip-transparent-expression-wrappers': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -6833,8 +6836,8 @@ snapshots:
 
   '@babel/helper-member-expression-to-functions@7.25.7':
     dependencies:
-      '@babel/traverse': 7.25.7
-      '@babel/types': 7.25.8
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6875,7 +6878,7 @@ snapshots:
 
   '@babel/helper-optimise-call-expression@7.25.7':
     dependencies:
-      '@babel/types': 7.25.8
+      '@babel/types': 7.26.0
 
   '@babel/helper-optimise-call-expression@7.25.9':
     dependencies:
@@ -6892,7 +6895,7 @@ snapshots:
       '@babel/core': 7.25.8
       '@babel/helper-annotate-as-pure': 7.25.7
       '@babel/helper-wrap-function': 7.25.0
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -6910,7 +6913,7 @@ snapshots:
       '@babel/core': 7.25.8
       '@babel/helper-member-expression-to-functions': 7.25.7
       '@babel/helper-optimise-call-expression': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -6939,8 +6942,8 @@ snapshots:
 
   '@babel/helper-skip-transparent-expression-wrappers@7.25.7':
     dependencies:
-      '@babel/traverse': 7.25.7
-      '@babel/types': 7.25.8
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6966,8 +6969,8 @@ snapshots:
   '@babel/helper-wrap-function@7.25.0':
     dependencies:
       '@babel/template': 7.25.7
-      '@babel/traverse': 7.25.7
-      '@babel/types': 7.25.8
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6999,7 +7002,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.25.8
       '@babel/helper-plugin-utils': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -7026,7 +7029,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.25.8
       '@babel/helper-plugin-utils': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -7186,7 +7189,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.25.7
       '@babel/helper-remap-async-to-generator': 7.25.0(@babel/core@7.25.8)
       '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.25.8)
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -7233,7 +7236,7 @@ snapshots:
       '@babel/helper-compilation-targets': 7.25.7
       '@babel/helper-plugin-utils': 7.25.7
       '@babel/helper-replace-supers': 7.25.7(@babel/core@7.25.8)
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -7299,7 +7302,7 @@ snapshots:
       '@babel/core': 7.25.8
       '@babel/helper-compilation-targets': 7.25.7
       '@babel/helper-plugin-utils': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -7348,7 +7351,7 @@ snapshots:
       '@babel/helper-module-transforms': 7.25.7(@babel/core@7.25.8)
       '@babel/helper-plugin-utils': 7.25.7
       '@babel/helper-validator-identifier': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/traverse': 7.25.9
     transitivePeerDependencies:
       - supports-color
 
@@ -7758,11 +7761,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/addon-dev@6.0.1(rollup@2.79.2)':
+  '@embroider/addon-dev@7.0.0(rollup@2.79.2)':
     dependencies:
       '@embroider/core': 3.4.19
       '@rollup/pluginutils': 4.2.1
-      content-tag: 2.0.2
+      content-tag: 3.0.0
       fs-extra: 10.1.0
       minimatch: 3.1.2
       rollup-plugin-copy-assets: 2.0.3(rollup@2.79.2)
@@ -7789,8 +7792,8 @@ snapshots:
   '@embroider/core@3.4.19':
     dependencies:
       '@babel/core': 7.25.8
-      '@babel/parser': 7.25.7
-      '@babel/traverse': 7.25.7
+      '@babel/parser': 7.26.1
+      '@babel/traverse': 7.25.9
       '@embroider/macros': 1.16.9
       '@embroider/shared-internals': 2.8.1
       assert-never: 1.3.0
@@ -9923,6 +9926,8 @@ snapshots:
       safe-buffer: 5.2.1
 
   content-tag@2.0.2: {}
+
+  content-tag@3.0.0: {}
 
   content-type@1.0.5: {}
 
