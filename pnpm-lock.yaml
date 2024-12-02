@@ -124,8 +124,8 @@ importers:
         specifier: 4.1.5
         version: 4.1.5(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))
       ember-cli-fastboot-testing:
-        specifier: 0.6.1
-        version: 0.6.1(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0)
+        specifier: 0.6.2
+        version: 0.6.2(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0)
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
@@ -2963,10 +2963,11 @@ packages:
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
 
-  ember-cli-fastboot-testing@0.6.1:
-    resolution: {integrity: sha512-nevPv77Wjk0Mslb0AF0wgHfbjki6Fi3/dapTrFz17WLX6n5maLr/MTL1hZcZdbT+69DHdgckCza8Z1WyxiUbBA==}
+  ember-cli-fastboot-testing@0.6.2:
+    resolution: {integrity: sha512-RwOM0Y2fT5PtiMkG7yXWCaCLGFatwKpfPT4Xt6Hxqf2ZAEkbVQWJw/aFaKLLOAo2kfted8nKdkRvZM6Jm647Pg==}
     engines: {node: 12.* || 14.* || 16.* || >= 18}
     peerDependencies:
+      '@ember/test-helpers': '>= 3.0.0'
       ember-source: ^3.28.0 || ^4.0.0 || ^5.0.0
 
   ember-cli-fastboot@4.1.5:
@@ -8424,6 +8425,26 @@ snapshots:
     dependencies:
       '@types/node': 22.5.5
 
+  '@types/ember@4.0.11':
+    dependencies:
+      '@types/ember__application': 4.0.11(@babel/core@7.25.8)
+      '@types/ember__array': 4.0.10
+      '@types/ember__component': 4.0.22
+      '@types/ember__controller': 4.0.12
+      '@types/ember__debug': 4.0.8(@babel/core@7.25.8)
+      '@types/ember__engine': 4.0.11
+      '@types/ember__error': 4.0.6
+      '@types/ember__object': 4.0.12
+      '@types/ember__polyfills': 4.0.6
+      '@types/ember__routing': 4.0.22
+      '@types/ember__runloop': 4.0.10
+      '@types/ember__service': 4.0.9
+      '@types/ember__string': 3.0.15
+      '@types/ember__template': 4.0.7
+      '@types/ember__test': 4.0.6(@babel/core@7.25.8)
+      '@types/ember__utils': 4.0.7
+      '@types/rsvp': 4.0.9
+
   '@types/ember@4.0.11(@babel/core@7.25.8)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.25.8)
@@ -8450,30 +8471,44 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.25.8)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.25.8)
-      '@types/ember': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__engine': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__object': 4.0.12(@babel/core@7.25.8)
+      '@types/ember': 4.0.11
+      '@types/ember__engine': 4.0.11
+      '@types/ember__object': 4.0.12
       '@types/ember__owner': 4.0.9
-      '@types/ember__routing': 4.0.22(@babel/core@7.25.8)
+      '@types/ember__routing': 4.0.22
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__array@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
+      '@types/ember__object': 4.0.12
 
   '@types/ember__array@4.0.10(@babel/core@7.25.8)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__object': 4.0.12(@babel/core@7.25.8)
+      '@types/ember__object': 4.0.12
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
 
+  '@types/ember__component@4.0.22':
+    dependencies:
+      '@types/ember': 4.0.11
+      '@types/ember__object': 4.0.12
+
   '@types/ember__component@4.0.22(@babel/core@7.25.8)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__object': 4.0.12(@babel/core@7.25.8)
+      '@types/ember__object': 4.0.12
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__controller@4.0.12':
+    dependencies:
+      '@types/ember__object': 4.0.12
 
   '@types/ember__controller@4.0.12(@babel/core@7.25.8)':
     dependencies:
@@ -8490,6 +8525,11 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember__engine@4.0.11':
+    dependencies:
+      '@types/ember__object': 4.0.12
+      '@types/ember__owner': 4.0.9
+
   '@types/ember__engine@4.0.11(@babel/core@7.25.8)':
     dependencies:
       '@types/ember__object': 4.0.12(@babel/core@7.25.8)
@@ -8499,6 +8539,11 @@ snapshots:
       - supports-color
 
   '@types/ember__error@4.0.6': {}
+
+  '@types/ember__object@4.0.12':
+    dependencies:
+      '@types/ember': 4.0.11
+      '@types/rsvp': 4.0.9
 
   '@types/ember__object@4.0.12(@babel/core@7.25.8)':
     dependencies:
@@ -8512,15 +8557,26 @@ snapshots:
 
   '@types/ember__polyfills@4.0.6': {}
 
+  '@types/ember__routing@4.0.22':
+    dependencies:
+      '@types/ember': 4.0.11
+      '@types/ember__controller': 4.0.12
+      '@types/ember__object': 4.0.12
+      '@types/ember__service': 4.0.9
+
   '@types/ember__routing@4.0.22(@babel/core@7.25.8)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__controller': 4.0.12(@babel/core@7.25.8)
-      '@types/ember__object': 4.0.12(@babel/core@7.25.8)
-      '@types/ember__service': 4.0.9(@babel/core@7.25.8)
+      '@types/ember__controller': 4.0.12
+      '@types/ember__object': 4.0.12
+      '@types/ember__service': 4.0.9
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__runloop@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__runloop@4.0.10(@babel/core@7.25.8)':
     dependencies:
@@ -8528,6 +8584,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__service@4.0.9':
+    dependencies:
+      '@types/ember__object': 4.0.12
 
   '@types/ember__service@4.0.9(@babel/core@7.25.8)':
     dependencies:
@@ -8546,6 +8606,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.25.8)':
     dependencies:
@@ -10283,8 +10347,9 @@ snapshots:
       resolve: 1.22.8
       semver: 5.7.2
 
-  ember-cli-fastboot-testing@0.6.1(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0):
+  ember-cli-fastboot-testing@0.6.2(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0):
     dependencies:
+      '@ember/test-helpers': 3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0)
       body-parser: 1.20.3
       ember-auto-import: 2.8.1(webpack@5.95.0)
       ember-cli-babel: 7.26.11
