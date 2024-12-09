@@ -65,7 +65,7 @@
     "globals": "15.11.0",
     "loader.js": "4.7.0",
     "prettier": "3.3.3",
-    "qunit": "2.22.0",
+    "qunit": "2.23.1",
     "request": "2.88.2",
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",

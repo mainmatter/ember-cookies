@@ -155,7 +155,7 @@ importers:
         version: 8.2.3(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))
       ember-qunit:
         specifier: 8.1.1
-        version: 8.1.1(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(qunit@2.22.0)
+        version: 8.1.1(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(qunit@2.23.1)
       ember-resolver:
         specifier: 13.0.2
         version: 13.0.2(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))
@@ -202,8 +202,8 @@ importers:
         specifier: 3.3.3
         version: 3.3.3
       qunit:
-        specifier: 2.22.0
-        version: 2.22.0
+        specifier: 2.23.1
+        version: 2.23.1
       request:
         specifier: 2.88.2
         version: 2.88.2
@@ -5404,8 +5404,8 @@ packages:
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.22.0:
-    resolution: {integrity: sha512-wPYvAvpjTL3zlUeyCX75T8gfZfdVXZa8y1EVkGe/XZNORIsCH/WI2X8R2KlemT921X9EKSZUL6CLGSPC7Ks08g==}
+  qunit@2.23.1:
+    resolution: {integrity: sha512-CGrsGy7NhkQmfiyOixBpbexh2PT7ekIb35uWiBi/hBNdTJF1W98UonyACFJJs8UmcP96lH+YJlX99dYZi5rZkg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -10659,14 +10659,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@8.1.1(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(qunit@2.22.0):
+  ember-qunit@8.1.1(@ember/test-helpers@3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0))(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(qunit@2.23.1):
     dependencies:
       '@ember/test-helpers': 3.3.1(@babel/core@7.25.8)(ember-source@5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0))(webpack@5.95.0)
       '@embroider/addon-shim': 1.8.9
       '@embroider/macros': 1.16.9
       ember-cli-test-loader: 3.1.0
       ember-source: 5.12.0(@glimmer/component@2.0.0)(rsvp@4.8.5)(webpack@5.95.0)
-      qunit: 2.22.0
+      qunit: 2.23.1
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -13398,7 +13398,7 @@ snapshots:
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.22.0:
+  qunit@2.23.1:
     dependencies:
       commander: 7.2.0
       node-watch: 0.7.3
