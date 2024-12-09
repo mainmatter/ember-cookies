@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2024-11-01)
 
 ember-cookies 1.2.0 (minor)
