@@ -3,7 +3,7 @@ import { get } from '@ember/object';
 import { assert } from '@ember/debug';
 import { getOwner } from '@ember/application';
 import Service from '@ember/service';
-import { serializeCookie } from '../utils/serialize-cookie';
+import { serializeCookie } from '../utils/serialize-cookie.ts';
 const { keys } = Object;
 const DEFAULTS = { raw: false };
 const MAX_COOKIE_BYTE_LENGTH = 4096;
