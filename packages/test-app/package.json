@@ -12,10 +12,11 @@
   "repository": "https://github.com/simplabs/ember-cookies",
   "scripts": {
     "build": "ember build",
-    "lint": "pnpm lint:js",
+    "lint": "pnpm lint:js && pnpm lint:types",
     "lint:fix": "pnpm lint:js:fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
+    "lint:types": "tsc --noEmit",
     "nodetest": "node node-tests/runner.js",
     "start": "ember server",
     "test": "ember test",
@@ -33,6 +34,12 @@
     "@eslint/js": "9.12.0",
     "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
+    "@glint/core": "^1.5.0",
+    "@glint/environment-ember-loose": "^1.5.0",
+    "@glint/environment-ember-template-imports": "^1.5.0",
+    "@tsconfig/ember": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "2.8.1",
     "ember-cli": "6.0.1",
@@ -69,6 +76,7 @@
     "request": "2.88.2",
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
+    "typescript": "^5.7.2",
     "webpack": "5.95.0"
   },
   "fastbootDependencies": [
