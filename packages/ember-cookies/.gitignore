@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/declarations/
 
 # dependencies
 /node_modules
