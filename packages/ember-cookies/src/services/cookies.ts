@@ -15,7 +15,7 @@ type ReadOptions = {
   path?: never;
 };
 
-type WriteOptions = {
+export type WriteOptions = {
   domain?: string;
   path?: string;
   secure?: boolean;
@@ -77,8 +77,9 @@ export default class CookiesService extends Service {
   }
 
   _getFastBootCookies() {
-    const fastBootCookies = Object.keys(this._fastBoot.request.cookies).reduce((acc, name) => {
-      const value = fastBootCookies[name];
+    const cookies = this._fastBoot.request.cookies;
+    const fastBootCookies = Object.keys(cookies).reduce((acc, name) => {
+      const value = cookies[name];
 
       if (typeof value === 'object') {
         acc[name] = value;
