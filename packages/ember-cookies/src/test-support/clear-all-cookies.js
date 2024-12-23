@@ -1,6 +1,6 @@
 import { assert } from '@ember/debug';
 import { isEmpty } from '@ember/utils';
-import { serializeCookie } from '../utils/serialize-cookie';
+import { serializeCookie } from '../utils/serialize-cookie.ts';
 
 export default function clearAllCookies(options = {}) {
   assert('Cookies cannot be set to be HTTP-only from a browser!', !options.httpOnly);

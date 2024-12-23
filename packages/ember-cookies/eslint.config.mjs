@@ -1,7 +1,7 @@
 import ember from 'eslint-plugin-ember';
 import prettier from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
-import babelParser from '@babel/eslint-parser';
+import typescriptParser from '@typescript-eslint/parser';
 import n from 'eslint-plugin-n';
 import js from '@eslint/js';
 
@@ -15,6 +15,7 @@ export default [
       'vendor/',
       'dist/',
       'tmp/',
+      'declarations/',
       'bower_components/',
       'node_modules/',
       'coverage/',
@@ -28,13 +29,14 @@ export default [
     plugins: {
       ember,
     },
+    files: ['**/*.{ts,js}'],
 
     languageOptions: {
       globals: {
         ...globals.browser,
       },
 
-      parser: babelParser,
+      parser: typescriptParser,
       ecmaVersion: 2020,
       sourceType: 'module',
 
@@ -53,7 +55,7 @@ export default [
       '**/.eslintrc.js',
       '**/.eslintrc.js',
       '**/.prettierrc.js',
-      '**/addon-main.js',
+      '**/addon-main.cjs',
       'blueprints/*/index.js',
       'config/**/*.js',
     ],

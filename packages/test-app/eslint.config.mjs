@@ -2,7 +2,7 @@ import ember from 'eslint-plugin-ember';
 import prettier from 'eslint-plugin-prettier/recommended';
 import qunit from 'eslint-plugin-qunit';
 import globals from 'globals';
-import babelParser from '@babel/eslint-parser';
+import typescriptParser from '@typescript-eslint/parser';
 import n from 'eslint-plugin-n';
 import js from '@eslint/js';
 
@@ -30,12 +30,13 @@ export default [
       ember,
     },
 
+    files: ['**/*.{ts,js}'],
     languageOptions: {
       globals: {
         ...globals.browser,
       },
 
-      parser: babelParser,
+      parser: typescriptParser,
       ecmaVersion: 2020,
       sourceType: 'module',
 

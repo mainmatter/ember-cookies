@@ -1,12 +1,23 @@
 import { typeOf, isEmpty } from '@ember/utils';
 
-export const serializeCookie = (name, value, options = {}) => {
+interface Options {
+  maxAge?: number | string;
+  domain?: string;
+  expires?: Date;
+  secure?: boolean;
+  httpOnly?: boolean;
+  path?: string;
+  sameSite?: string;
+  partitioned?: boolean;
+}
+
+export const serializeCookie = (name: string, value: string, options: Options = {}) => {
   let cookie = `${name}=${value}`;
 
   if (!isEmpty(options.domain)) {
     cookie = `${cookie}; domain=${options.domain}`;
   }
-  if (typeOf(options.expires) === 'date') {
+  if (options.expires && typeOf(options.expires) === 'date') {
     cookie = `${cookie}; expires=${options.expires.toUTCString()}`;
   }
   if (!isEmpty(options.maxAge)) {
