@@ -1,8 +1,9 @@
 import { assert } from '@ember/debug';
 import { isEmpty } from '@ember/utils';
 import { serializeCookie } from '../utils/serialize-cookie.ts';
+import type { WriteOptions } from '../services/cookies.ts';
 
-export default function clearAllCookies(options = {}) {
+export default function clearAllCookies(options: WriteOptions = {}) {
   assert('Cookies cannot be set to be HTTP-only from a browser!', !options.httpOnly);
   assert(
     'Expires, Max-Age, and raw options cannot be set when clearing cookies',
@@ -16,6 +17,9 @@ export default function clearAllCookies(options = {}) {
 
   cookies.forEach(cookie => {
     let cookieName = cookie.split('=')[0];
-    document.cookie = serializeCookie(cookieName, '', options);
+
+    if (typeof cookieName === 'string') {
+      document.cookie = serializeCookie(cookieName, '', options);
+    }
   });
 }

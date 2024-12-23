@@ -11,7 +11,7 @@ interface Options {
   partitioned?: boolean;
 }
 
-export const serializeCookie = (name: string, value: string, options: Options = {}) => {
+export const serializeCookie = (name: string, value: string | unknown, options: Options = {}) => {
   let cookie = `${name}=${value}`;
 
   if (!isEmpty(options.domain)) {

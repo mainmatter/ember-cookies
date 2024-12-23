@@ -18,7 +18,7 @@
       "default": "./dist/*.js"
     },
     "./test-support": {
-      "types": "./declarations/*.d.ts",
+      "types": "./declarations/test-support/index.d.ts",
       "default": "./dist/test-support/index.js"
     },
     "./addon-main.js": "./addon-main.cjs"
@@ -81,6 +81,9 @@
     "prettier": "3.3.3",
     "rollup": "4.29.1",
     "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "ember-source": ">=4.0"
   },
   "engines": {
     "node": ">= 16.*"
