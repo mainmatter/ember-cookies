@@ -18,7 +18,7 @@
       "default": "./dist/*.js"
     },
     "./test-support": {
-      "types": "./declarations/*.d.ts",
+      "types": "./declarations/test-support/index.d.ts",
       "default": "./dist/test-support/index.js"
     },
     "./addon-main.js": "./addon-main.cjs"
