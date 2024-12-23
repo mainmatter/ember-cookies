@@ -20,6 +20,9 @@ importers:
       '@embroider/addon-shim':
         specifier: ^1.7.1
         version: 1.8.9
+      ember-source:
+        specifier: '>=4.0'
+        version: 5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.95.0)
     devDependencies:
       '@babel/core':
         specifier: 7.25.8
@@ -8670,26 +8673,6 @@ snapshots:
     dependencies:
       '@types/node': 22.5.5
 
-  '@types/ember@4.0.11':
-    dependencies:
-      '@types/ember__application': 4.0.11(@babel/core@7.25.8)
-      '@types/ember__array': 4.0.10(@babel/core@7.25.8)
-      '@types/ember__component': 4.0.22(@babel/core@7.25.8)
-      '@types/ember__controller': 4.0.12(@babel/core@7.25.8)
-      '@types/ember__debug': 4.0.8
-      '@types/ember__engine': 4.0.11
-      '@types/ember__error': 4.0.6
-      '@types/ember__object': 4.0.12(@babel/core@7.25.8)
-      '@types/ember__polyfills': 4.0.6
-      '@types/ember__routing': 4.0.22(@babel/core@7.25.8)
-      '@types/ember__runloop': 4.0.10
-      '@types/ember__service': 4.0.9
-      '@types/ember__string': 3.0.15
-      '@types/ember__template': 4.0.7
-      '@types/ember__test': 4.0.6(@babel/core@7.25.8)
-      '@types/ember__utils': 4.0.7(@babel/core@7.25.8)
-      '@types/rsvp': 4.0.9
-
   '@types/ember@4.0.11(@babel/core@7.25.8)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.25.8)
@@ -8716,7 +8699,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.25.8)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.25.8)
-      '@types/ember': 4.0.11
+      '@types/ember': 4.0.11(@babel/core@7.25.8)
       '@types/ember__engine': 4.0.11
       '@types/ember__object': 4.0.12(@babel/core@7.25.8)
       '@types/ember__owner': 4.0.9
@@ -8781,10 +8764,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__runloop@4.0.10':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__runloop@4.0.10(@babel/core@7.25.8)':
     dependencies:

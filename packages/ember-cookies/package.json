@@ -82,6 +82,9 @@
     "rollup": "4.29.1",
     "typescript": "^5.7.2"
   },
+  "peerDependencies": {
+    "ember-source": ">=4.0"
+  },
   "engines": {
     "node": ">= 16.*"
   },
