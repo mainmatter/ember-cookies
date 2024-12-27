@@ -23,6 +23,7 @@ export type WriteOptions = {
   sameSite?: 'Strict' | 'Lax' | 'None';
   signed?: never;
   httpOnly?: boolean;
+  partitioned?: boolean;
 } & ({ expires?: Date; maxAge?: never } | { maxAge?: number; expires?: never });
 
 type ClearOptions = {
