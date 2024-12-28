@@ -1,10 +1,11 @@
 import { inject as service } from '@ember/service';
 import Controller from '@ember/controller';
+import CookiesService from 'ember-cookies/services/cookies';
 
-type Cookie = { name: string; value: any };
+type Cookie = { name: string; value?: string };
 
 export default class IndexController extends Controller {
-  @service cookies!: any;
+  @service cookies!: CookiesService;
 
   get allCookies(): Cookie[] {
     this.cookies.write('now', new Date().getTime());
@@ -16,5 +17,10 @@ export default class IndexController extends Controller {
 
       return acc;
     }, [] as Cookie[]);
+  }
+
+  get singleCookie(): Cookie {
+    const cookie = this.cookies.read('now');
+    return { name: 'now', value: cookie };
   }
 }
