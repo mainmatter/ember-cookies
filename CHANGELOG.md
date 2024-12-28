@@ -1,5 +1,26 @@
 # Changelog
 
+## Release (2024-12-28)
+
+ember-cookies 1.3.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-cookies`, `test-app`
+  * [#1015](https://github.com/mainmatter/ember-cookies/pull/1015) chore(typescript): move remaining addon and test-app code ([@BobrImperator](https://github.com/BobrImperator))
+  * [#1014](https://github.com/mainmatter/ember-cookies/pull/1014) chore(typescript): initial Typescript setup ([@BobrImperator](https://github.com/BobrImperator))
+
+#### :memo: Documentation
+* `ember-cookies`, `test-app`
+  * [#1017](https://github.com/mainmatter/ember-cookies/pull/1017) doc(typescript): add usage example ([@BobrImperator](https://github.com/BobrImperator))
+
+#### :house: Internal
+* `ember-cookies`, `test-app`
+  * [#1017](https://github.com/mainmatter/ember-cookies/pull/1017) doc(typescript): add usage example ([@BobrImperator](https://github.com/BobrImperator))
+  * [#1014](https://github.com/mainmatter/ember-cookies/pull/1014) chore(typescript): initial Typescript setup ([@BobrImperator](https://github.com/BobrImperator))
+
+#### Committers: 1
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+
 ## Release (2024-11-01)
 
 ember-cookies 1.2.0 (minor)
