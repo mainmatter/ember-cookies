@@ -97,6 +97,8 @@ export default class CookiesService extends Service {
     return this._filterCachedFastBootCookies(mergedFastBootCookies);
   }
 
+  read(): Record<string, string | undefined>;
+  read(_name: string): string | undefined;
   read(
     name?: string,
     options: ReadOptions = {}

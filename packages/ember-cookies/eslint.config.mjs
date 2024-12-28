@@ -2,6 +2,7 @@ import ember from 'eslint-plugin-ember';
 import prettier from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import typescriptParser from '@typescript-eslint/parser';
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import n from 'eslint-plugin-n';
 import js from '@eslint/js';
 
@@ -28,6 +29,7 @@ export default [
   {
     plugins: {
       ember,
+      '@typescript-eslint': typescriptEslintPlugin,
     },
     files: ['**/*.{ts,js}'],
 
@@ -47,7 +49,11 @@ export default [
       },
     },
 
-    rules: {},
+    rules: {
+      'no-dupe-class-members': 'off',
+      '@typescript-eslint/no-dupe-class-members': 'error',
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    },
   },
   {
     files: [
