@@ -202,8 +202,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
       ember-page-title:
-        specifier: 8.2.3
-        version: 8.2.3(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0))
+        specifier: 9.0.1
+        version: 9.0.1(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0))
       ember-qunit:
         specifier: 8.1.1
         version: 8.1.1(@ember/test-helpers@3.3.1(@babel/core@7.26.9)(@glint/template@1.5.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0))(webpack@5.98.0))(@glint/template@1.5.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0))(qunit@2.24.1)
@@ -3275,11 +3275,11 @@ packages:
     resolution: {integrity: sha512-wtjgjEV0Hk4fgiAwFjOfPrGWfmFrbRW3zgNZO4oA3H5FlbMssMvWuR8blQ3QSWYHODVK9r+ThsRAs8lG4kbxqA==}
     engines: {node: '>= 12.*'}
 
-  ember-page-title@8.2.3:
-    resolution: {integrity: sha512-9XH4EVPCpSCyXRsLPzdDydU4HgQnaVeJJTrRF0WVh5bZERI9DgxuHv1NPmZU28todHRH91KcBc5nx8kIVJmqUw==}
+  ember-page-title@9.0.1:
+    resolution: {integrity: sha512-qo3NHJRrCZpYyGr+KkDAQDZ9IFJOFLW9qEKYer2tetSpaL9B2PQmh4KY0XdZY25jxFg8GZ1+DChDSImIbh5yzA==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
-      ember-source: '>= 3.28.0'
+      ember-source: '>= 4.2.0'
 
   ember-qunit@8.1.1:
     resolution: {integrity: sha512-nT+6s74j3BKNn+QQY/hINC3Xw3kn0NF0cU9zlgVQmCBWoyis1J24xWrY2LFOMThPmF6lHqcrUb5JwvBD4BXEXg==}
@@ -8660,6 +8660,26 @@ snapshots:
       - qunit
       - supports-color
 
+  '@types/ember@4.0.11':
+    dependencies:
+      '@types/ember__application': 4.0.11(@babel/core@7.26.9)
+      '@types/ember__array': 4.0.10(@babel/core@7.26.9)
+      '@types/ember__component': 4.0.22(@babel/core@7.26.9)
+      '@types/ember__controller': 4.0.12(@babel/core@7.26.9)
+      '@types/ember__debug': 4.0.8
+      '@types/ember__engine': 4.0.11
+      '@types/ember__error': 4.0.6
+      '@types/ember__object': 4.0.12(@babel/core@7.26.9)
+      '@types/ember__polyfills': 4.0.6
+      '@types/ember__routing': 4.0.22(@babel/core@7.26.9)
+      '@types/ember__runloop': 4.0.10
+      '@types/ember__service': 4.0.9
+      '@types/ember__string': 3.0.15
+      '@types/ember__template': 4.0.7
+      '@types/ember__test': 4.0.6(@babel/core@7.26.9)
+      '@types/ember__utils': 4.0.7(@babel/core@7.26.9)
+      '@types/rsvp': 4.0.9
+
   '@types/ember@4.0.11(@babel/core@7.26.9)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.26.9)
@@ -8686,7 +8706,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.26.9)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.26.9)
-      '@types/ember': 4.0.11(@babel/core@7.26.9)
+      '@types/ember': 4.0.11
       '@types/ember__engine': 4.0.11
       '@types/ember__object': 4.0.12(@babel/core@7.26.9)
       '@types/ember__owner': 4.0.9
@@ -8751,6 +8771,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__runloop@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__runloop@4.0.10(@babel/core@7.26.9)':
     dependencies:
@@ -10990,7 +11014,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-page-title@8.2.3(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0)):
+  ember-page-title@9.0.1(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.98.0)):
     dependencies:
       '@embroider/addon-shim': 1.8.9
       '@simple-dom/document': 1.4.0
