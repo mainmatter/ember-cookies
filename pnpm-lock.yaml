@@ -12,8 +12,8 @@ importers:
         specifier: 9.1.2
         version: 9.1.2
       release-plan:
-        specifier: 0.15.0
-        version: 0.15.0
+        specifier: 0.16.0
+        version: 0.16.0
 
   packages/ember-cookies:
     dependencies:
@@ -3995,9 +3995,9 @@ packages:
     resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
     engines: {node: '>= 4.0'}
 
-  github-changelog@1.0.2:
-    resolution: {integrity: sha512-ieWWj+wEHcWwhofXOB6HwxYbRCmWMZ8q8NHjt+g8d0GVA8AJE3h7uxjZ9ZqT8l9TPrGH5HRjaVOqO3PiU4pUSQ==}
-    engines: {node: 12.* || 14.* || >= 16}
+  github-changelog@2.0.0:
+    resolution: {integrity: sha512-JdAwddNCvHkZY/pTMqpoaLEfksaWiTc+beDjBkPEnr7iVlKfu8SeyCT8Sef+KsonRgIj6pl3SiWDPSefWmeicw==}
+    engines: {node: 18.* || 20.* || >= 22}
     hasBin: true
 
   glob-parent@5.1.2:
@@ -5744,8 +5744,8 @@ packages:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
 
-  release-plan@0.15.0:
-    resolution: {integrity: sha512-UxoSSDK+I0N11d2cftfzepFlgvWKUiNZLVeHapbPUVqNbQQZor9Cs7G2mE+UHjCa9+QKVAU4RdFCkILTrlR7CQ==}
+  release-plan@0.16.0:
+    resolution: {integrity: sha512-S2hrXACiy39LenrdvPAhSY7PcitS4A4fAxlzoPgYyCiS2OU6Ed+cUKvN4h9/uRyZ/B3AMGywZUIPtIhCUIjTng==}
     hasBin: true
 
   remote-git-tags@3.0.0:
@@ -8774,7 +8774,7 @@ snapshots:
       '@types/ember__string': 3.0.15
       '@types/ember__template': 4.0.7
       '@types/ember__test': 4.0.6(@babel/core@7.26.9)
-      '@types/ember__utils': 4.0.7(@babel/core@7.26.9)
+      '@types/ember__utils': 4.0.7
       '@types/rsvp': 4.0.9
 
   '@types/ember@4.0.11(@babel/core@7.26.9)':
@@ -8894,6 +8894,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.26.9)':
     dependencies:
@@ -12148,7 +12152,7 @@ snapshots:
 
   git-repo-info@2.1.1: {}
 
-  github-changelog@1.0.2:
+  github-changelog@2.0.0:
     dependencies:
       '@manypkg/get-packages': 2.2.2
       chalk: 4.1.2
@@ -13984,7 +13988,7 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
-  release-plan@0.15.0:
+  release-plan@0.16.0:
     dependencies:
       '@manypkg/get-packages': 2.2.2
       '@npmcli/package-json': 6.1.1
@@ -13994,7 +13998,7 @@ snapshots:
       cli-highlight: 2.1.11
       execa: 9.5.2
       fs-extra: 11.2.0
-      github-changelog: 1.0.2
+      github-changelog: 2.0.0
       js-yaml: 4.1.0
       latest-version: 9.0.0
       parse-github-repo-url: 1.4.1
