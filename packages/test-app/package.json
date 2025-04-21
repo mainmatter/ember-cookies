@@ -79,7 +79,7 @@
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
     "typescript": "5.8.3",
-    "webpack": "5.99.5"
+    "webpack": "5.99.6"
   },
   "fastbootDependencies": [
     "node-fetch",
