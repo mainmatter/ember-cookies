@@ -25,7 +25,7 @@
     "test:watch": "pnpm test:one ember-default --- ember test --server"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.27.0",
+    "@babel/eslint-parser": "7.27.1",
     "@ember/optional-features": "2.2.0",
     "@ember/string": "4.0.1",
     "@ember/test-helpers": "3.3.1",
@@ -70,7 +70,7 @@
     "eslint-plugin-n": "17.17.0",
     "eslint-plugin-prettier": "5.3.1",
     "eslint-plugin-qunit": "8.1.2",
-    "glob": "11.0.1",
+    "glob": "11.0.2",
     "globals": "16.0.0",
     "loader.js": "4.7.0",
     "prettier": "3.5.3",
@@ -79,7 +79,7 @@
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
     "typescript": "5.8.3",
-    "webpack": "5.99.6"
+    "webpack": "5.99.7"
   },
   "fastbootDependencies": [
     "node-fetch",
