@@ -28,9 +28,9 @@
     "concurrently": "9.1.2",
     "release-plan": "0.16.0"
   },
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.12.1",
   "volta": {
     "node": "22.16.0",
-    "pnpm": "10.8.0"
+    "pnpm": "10.12.1"
   }
 }
