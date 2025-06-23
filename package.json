@@ -25,7 +25,7 @@
     "test:watch:test-app": "pnpm --filter test-app test:watch"
   },
   "devDependencies": {
-    "concurrently": "9.1.2",
+    "concurrently": "9.2.0",
     "release-plan": "0.17.0"
   },
   "packageManager": "pnpm@10.8.0",
