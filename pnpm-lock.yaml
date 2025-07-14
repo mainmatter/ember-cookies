@@ -238,8 +238,8 @@ importers:
         specifier: 5.5.1
         version: 5.5.1(@types/eslint@9.6.1)(eslint-config-prettier@10.1.5(eslint@9.31.0))(eslint@9.31.0)(prettier@3.6.2)
       eslint-plugin-qunit:
-        specifier: 8.2.2
-        version: 8.2.2(eslint@9.31.0)
+        specifier: 8.2.3
+        version: 8.2.3(eslint@9.31.0)
       glob:
         specifier: 11.0.3
         version: 11.0.3
@@ -3598,8 +3598,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-qunit@8.2.2:
-    resolution: {integrity: sha512-C56SpGPyUOgXWaTiQbwKaDQHEF7MbKUmWtKkIybK5vL3Dqk+4U3ng0wARIUxsk2YNPFzPvlQcMMP6jlQz2NlvQ==}
+  eslint-plugin-qunit@8.2.3:
+    resolution: {integrity: sha512-rBDTZONPHbTRHsqbQl0ZZkaUpWRaIBXZRyGfBViIY0Ra+GBhKJBQlsLFFWpqnJF+lWau7hyLO/aeO8zD8nEzYQ==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
 
   eslint-scope@5.1.1:
@@ -9098,7 +9098,7 @@ snapshots:
       '@types/ember__string': 3.0.15
       '@types/ember__template': 4.0.7
       '@types/ember__test': 4.0.6(@babel/core@7.28.0)
-      '@types/ember__utils': 4.0.7
+      '@types/ember__utils': 4.0.7(@babel/core@7.28.0)
       '@types/rsvp': 4.0.9
 
   '@types/ember@4.0.11(@babel/core@7.28.0)':
@@ -9218,10 +9218,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.28.0)':
     dependencies:
@@ -11786,7 +11782,7 @@ snapshots:
       '@types/eslint': 9.6.1
       eslint-config-prettier: 10.1.5(eslint@9.31.0)
 
-  eslint-plugin-qunit@8.2.2(eslint@9.31.0):
+  eslint-plugin-qunit@8.2.3(eslint@9.31.0):
     dependencies:
       eslint-utils: 3.0.0(eslint@9.31.0)
       requireindex: 1.2.0
