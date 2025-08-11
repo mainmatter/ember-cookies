@@ -88,8 +88,8 @@ importers:
         specifier: 17.21.3
         version: 17.21.3(eslint@9.33.0)(typescript@5.9.2)
       eslint-plugin-prettier:
-        specifier: 5.5.3
-        version: 5.5.3(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2)
+        specifier: 5.5.4
+        version: 5.5.4(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2)
       globals:
         specifier: 16.3.0
         version: 16.3.0
@@ -148,8 +148,8 @@ importers:
         specifier: 6.1.3
         version: 6.1.3(@ember/test-helpers@3.3.1(@babel/core@7.28.0)(@glint/template@1.5.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.101.0))(webpack@5.101.0))(@glint/template@1.5.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.101.0))(qunit@2.24.1)
       '@types/qunit':
-        specifier: 2.19.12
-        version: 2.19.12
+        specifier: 2.19.13
+        version: 2.19.13
       '@typescript-eslint/eslint-plugin':
         specifier: 8.39.0
         version: 8.39.0(@typescript-eslint/parser@8.39.0(eslint@9.33.0)(typescript@5.9.2))(eslint@9.33.0)(typescript@5.9.2)
@@ -235,8 +235,8 @@ importers:
         specifier: 17.21.3
         version: 17.21.3(eslint@9.33.0)(typescript@5.9.2)
       eslint-plugin-prettier:
-        specifier: 5.5.3
-        version: 5.5.3(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2)
+        specifier: 5.5.4
+        version: 5.5.4(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2)
       eslint-plugin-qunit:
         specifier: 8.2.5
         version: 8.2.5(eslint@9.33.0)
@@ -1831,8 +1831,8 @@ packages:
   '@types/qs@6.9.16':
     resolution: {integrity: sha512-7i+zxXdPD0T4cKDuxCUXJ4wHcsJLwENa6Z3dCu8cfCK743OGy5Nu1RmAGqDPsoTDINVEcdXKRvR/zre+P2Ku1A==}
 
-  '@types/qunit@2.19.12':
-    resolution: {integrity: sha512-II+C1wgzUia0g+tGAH+PBb4XiTm8/C/i6sN23r21NNskBYOYrv+qnW0tFQ/IxZzKVwrK4CTglf8YO3poJUclQA==}
+  '@types/qunit@2.19.13':
+    resolution: {integrity: sha512-N4xp3v4s7f0jb2Oij6+6xw5QhH7/IgHCoGIFLCWtbEWoPkGYp8Te4mIwIP21qaurr6ed5JiPMiy2/ZoiGPkLIw==}
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
@@ -3576,8 +3576,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-prettier@5.5.3:
-    resolution: {integrity: sha512-NAdMYww51ehKfDyDhv59/eIItUVzU0Io9H2E8nHNGKEeeqlnci+1gCvrHib6EmZdf6GxF+LCV5K7UC65Ezvw7w==}
+  eslint-plugin-prettier@5.5.4:
+    resolution: {integrity: sha512-swNtI95SToIz05YINMA6Ox5R057IMAmWZ26GqPxusAp1TZzj+IdY9tXNWWD3vkF/wEqydCONcwjTFpxybBqZsg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -9078,7 +9078,7 @@ snapshots:
       '@types/ember__string': 3.0.15
       '@types/ember__template': 4.0.7
       '@types/ember__test': 4.0.6(@babel/core@7.28.0)
-      '@types/ember__utils': 4.0.7
+      '@types/ember__utils': 4.0.7(@babel/core@7.28.0)
       '@types/rsvp': 4.0.9
 
   '@types/ember@4.0.11(@babel/core@7.28.0)':
@@ -9199,10 +9199,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
-
   '@types/ember__utils@4.0.7(@babel/core@7.28.0)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.28.0)
@@ -9269,7 +9265,7 @@ snapshots:
 
   '@types/qs@6.9.16': {}
 
-  '@types/qunit@2.19.12': {}
+  '@types/qunit@2.19.13': {}
 
   '@types/range-parser@1.2.7': {}
 
@@ -11752,7 +11748,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  eslint-plugin-prettier@5.5.3(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2):
+  eslint-plugin-prettier@5.5.4(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.33.0))(eslint@9.33.0)(prettier@3.6.2):
     dependencies:
       eslint: 9.33.0
       prettier: 3.6.2
