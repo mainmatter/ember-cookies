@@ -40,8 +40,8 @@
     "@tsconfig/ember": "3.0.11",
     "@types/ember-qunit": "6.1.3",
     "@types/qunit": "2.19.13",
-    "@typescript-eslint/eslint-plugin": "8.39.0",
-    "@typescript-eslint/parser": "8.39.0",
+    "@typescript-eslint/eslint-plugin": "8.39.1",
+    "@typescript-eslint/parser": "8.39.1",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "2.10.0",
     "ember-cli": "6.6.0",
@@ -79,7 +79,7 @@
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
     "typescript": "5.9.2",
-    "webpack": "5.101.0"
+    "webpack": "5.101.2"
   },
   "fastbootDependencies": [
     "node-fetch",
