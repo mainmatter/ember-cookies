@@ -57,7 +57,7 @@
     "ember-disable-prototype-extensions": "1.1.3",
     "ember-load-initializers": "3.0.1",
     "ember-maybe-import-regenerator": "1.0.0",
-    "ember-page-title": "9.0.2",
+    "ember-page-title": "9.0.3",
     "ember-qunit": "8.1.1",
     "ember-resolver": "13.1.1",
     "ember-sinon": "5.0.0",
@@ -66,7 +66,7 @@
     "ember-try": "3.0.0",
     "eslint": "9.34.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-ember": "12.7.0",
+    "eslint-plugin-ember": "12.7.3",
     "eslint-plugin-n": "17.21.3",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-qunit": "8.2.5",
@@ -79,7 +79,7 @@
     "rsvp": "4.8.5",
     "symlink-or-copy": "1.3.1",
     "typescript": "5.9.2",
-    "webpack": "5.101.2"
+    "webpack": "5.101.3"
   },
   "fastbootDependencies": [
     "node-fetch",
