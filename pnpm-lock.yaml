@@ -860,8 +860,8 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@csstools/color-helpers@5.0.2':
-    resolution: {integrity: sha512-JqWH1vsgdGcw2RR6VliXXdA0/59LttzlU8UlRT/iUUsEeWfYq8I+K0yhihEUTTHLRm1EXvpsCx3083EU15ecsA==}
+  '@csstools/color-helpers@5.1.0':
+    resolution: {integrity: sha512-S11EXWJyy0Mz5SYvRmY8nJYTFFd1LCNV+7cXyAgQtOOuzb4EsgfqDufL+9esx72/eLhsRdGZwaldu/h+E4t4BA==}
     engines: {node: '>=18'}
 
   '@csstools/css-calc@2.1.4':
@@ -871,8 +871,8 @@ packages:
       '@csstools/css-parser-algorithms': ^3.0.5
       '@csstools/css-tokenizer': ^3.0.4
 
-  '@csstools/css-color-parser@3.0.10':
-    resolution: {integrity: sha512-TiJ5Ajr6WRd1r8HSiwJvZBiJOqtH86aHpUjq5aEKWHiII2Qfjqd/HCWKPOW8EP4vcspXbHnXrwIDlu5savQipg==}
+  '@csstools/css-color-parser@3.1.0':
+    resolution: {integrity: sha512-nbtKwh3a6xNVIp/VRuXV64yTKnb1IjTAEEh3irzS+HkKjAOYLTGNb9pmVNntZ8iVBHcWDA2Dof0QtPgFI1BaTA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^3.0.5
@@ -2101,8 +2101,8 @@ packages:
     resolution: {integrity: sha512-n+ktQ3JeyWrpRutSyPn2PsHeH+A94SVm+iUoogzf9VUqpP47FfWem24gpQXhn+p6+x5/BpuFJXMLXWt7ZoYAKA==}
     engines: {node: '>= 12.*'}
 
-  babel-plugin-ember-template-compilation@3.0.0:
-    resolution: {integrity: sha512-tIZh1sgvswtJqtjiAQLZEtfje37HvsFsivV3jOrkruq0K1JzewP5VUJxx72qK3vwqFOG6XtiVXYBNyEJFmdXgQ==}
+  babel-plugin-ember-template-compilation@3.0.1:
+    resolution: {integrity: sha512-3fUgnv+azabsl2PMd+SpkV8E7vvp7oRLaXv+OJIe36G3niSVYDKJ+7n6WaPyh+z7gqeAKSBj7Bdc5dYbhEMsgQ==}
     engines: {node: '>= 18.*'}
 
   babel-plugin-htmlbars-inline-precompile@5.3.1:
@@ -2357,8 +2357,8 @@ packages:
   browser-process-hrtime@1.0.0:
     resolution: {integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==}
 
-  browserslist@4.25.2:
-    resolution: {integrity: sha512-0si2SJK3ooGzIawRu61ZdPCO1IncZwS8IzuX73sPZsXW6EQ/w/DAfPyKI8l1ETTCr2MnvqWitmlCUxgdul45jA==}
+  browserslist@4.25.3:
+    resolution: {integrity: sha512-cDGv1kkDI4/0e5yON9yM5G/0A5u8sf5TnmdX5C9qHzI9PPu++sQ9zjm1k9NiOrf3riY4OkK0zSGqfvJyJsgCBQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -2414,8 +2414,8 @@ packages:
     resolution: {integrity: sha512-RbsNrFyhwkx+6psk/0fK/Q9orOUr9VMxohGd8vTa4djf4TGLfblBgUfqZChrZuW0Q+mz2eBPFLusw9Jfukzmhg==}
     hasBin: true
 
-  caniuse-lite@1.0.30001735:
-    resolution: {integrity: sha512-EV/laoX7Wq2J9TQlyIXRxTJqIw4sxfXS4OYgudGxBYRuTv0q7AM6yMEpU/Vo1I94thg9U6EZ2NfZx9GJq83u7w==}
+  caniuse-lite@1.0.30001737:
+    resolution: {integrity: sha512-BiloLiXtQNrY5UyF0+1nSJLXUENuhka2pzy2Fx5pGxqavdrxSCW4U6Pn/PoG3Efspi2frRbHpBV2XsrPE6EDlw==}
 
   capture-exit@2.0.0:
     resolution: {integrity: sha512-PiT/hQmTonHhl/HFGN+Lx3JJUznrVYJ3+AQsnthneZbvW7x+f08Tk7yLJTLEOUvBTbduLeeBkxEaYXUOUrRq6g==}
@@ -2836,8 +2836,8 @@ packages:
     resolution: {integrity: sha512-XgZ0pFcakEUlbwQEVNg3+QAis1FyTL3Qel9FYy8pSkQqoG3PNoT0bOCQtOXcOkur21r2Eq2kI+IE+gsmAEVlYw==}
     engines: {node: '>=0.10.0'}
 
-  core-js-compat@3.45.0:
-    resolution: {integrity: sha512-gRoVMBawZg0OnxaVv3zpqLLxaHmsubEGyTnqdpI/CEBvX4JadI1dMSHxagThprYRtSVbuQxvi6iUatdPxohHpA==}
+  core-js-compat@3.45.1:
+    resolution: {integrity: sha512-tqTt5T4PzsMIZ430XGviK4vzYSoeNJ6CXODi6c/voxOT6IZqBht5/EKaSNnYiEjjRYxjVz7DQIsOsY0XNi8PIA==}
 
   core-js@2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
@@ -3081,8 +3081,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.203:
-    resolution: {integrity: sha512-uz4i0vLhfm6dLZWbz/iH88KNDV+ivj5+2SA+utpgjKaj9Q0iDLuwk6Idhe9BTxciHudyx6IvTvijhkPvFGUQ0g==}
+  electron-to-chromium@1.5.208:
+    resolution: {integrity: sha512-ozZyibehoe7tOhNaf16lKmljVf+3npZcJIEbJRVftVsmAg5TeA1mGS9dVCZzOwr2xT7xK15V0p7+GZqSPgkuPg==}
 
   ember-auto-import@2.10.0:
     resolution: {integrity: sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==}
@@ -4680,8 +4680,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  ky@1.8.2:
-    resolution: {integrity: sha512-XybQJ3d4Ea1kI27DoelE5ZCT3bSJlibYTtQuMsyzKox3TMyayw1asgQdl54WroAm+fIA3ZCr8zXW2RpR7qWVpA==}
+  ky@1.9.0:
+    resolution: {integrity: sha512-NgBeR/cu7kuC4BAeF1rnXhfoI2uQ9RBe8zl5vo87ASsf1iIQoCeOxyt6Io6K4Ki++5ItCavXAtbEWWCGFciQ6g==}
     engines: {node: '>=18'}
 
   latest-version@9.0.0:
@@ -6359,8 +6359,8 @@ packages:
     resolution: {integrity: sha512-05G8/LrzqOOFvZhhAk32wsGiPZ1lfUrl+iV7+OkKgfofZxiceZWMHkKmow71YsyVQ8IvGBP2EjcIjE5gL4l5lA==}
     hasBin: true
 
-  tapable@2.2.2:
-    resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
+  tapable@2.2.3:
+    resolution: {integrity: sha512-ZL6DDuAlRlLGghwcfmSn9sK3Hr6ArtyudlSAiCqQ6IfE+b+HHbydbYDIG15IfS5do+7XQQBdBiubF/cV2dnDzg==}
     engines: {node: '>=6'}
 
   tar@6.2.1:
@@ -6988,12 +6988,12 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  yoctocolors-cjs@2.1.2:
-    resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
+  yoctocolors-cjs@2.1.3:
+    resolution: {integrity: sha512-U/PBtDf35ff0D8X8D0jfdzHYEPFxAI7jJlxZXwCSez5M3190m+QobIfh+sWDWSHMCWWJN2AWamkegn6vr6YBTw==}
     engines: {node: '>=18'}
 
-  yoctocolors@2.1.1:
-    resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
+  yoctocolors@2.1.2:
+    resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
     engines: {node: '>=18'}
 
 snapshots:
@@ -7006,7 +7006,7 @@ snapshots:
   '@asamuzakjp/css-color@3.2.0':
     dependencies:
       '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
-      '@csstools/css-color-parser': 3.0.10(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-color-parser': 3.1.0(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 10.4.3
@@ -7063,7 +7063,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.28.0
       '@babel/helper-validator-option': 7.27.1
-      browserslist: 4.25.2
+      browserslist: 4.25.3
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -7723,7 +7723,7 @@ snapshots:
       babel-plugin-polyfill-corejs2: 0.4.14(@babel/core@7.28.3)
       babel-plugin-polyfill-corejs3: 0.13.0(@babel/core@7.28.3)
       babel-plugin-polyfill-regenerator: 0.6.5(@babel/core@7.28.3)
-      core-js-compat: 3.45.0
+      core-js-compat: 3.45.1
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -7772,16 +7772,16 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@csstools/color-helpers@5.0.2': {}
+  '@csstools/color-helpers@5.1.0': {}
 
   '@csstools/css-calc@2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
 
-  '@csstools/css-color-parser@3.0.10(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)':
+  '@csstools/css-color-parser@3.1.0(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)':
     dependencies:
-      '@csstools/color-helpers': 5.0.2
+      '@csstools/color-helpers': 5.1.0
       '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
@@ -7874,7 +7874,7 @@ snapshots:
       '@embroider/reverse-exports': 0.1.2
       '@embroider/shared-internals': 3.0.0
       assert-never: 1.4.0
-      babel-plugin-ember-template-compilation: 3.0.0
+      babel-plugin-ember-template-compilation: 3.0.1
       broccoli-node-api: 1.7.0
       broccoli-persistent-filter: 3.1.3
       broccoli-plugin: 4.0.7
@@ -8650,7 +8650,7 @@ snapshots:
       '@types/ember__string': 3.0.15
       '@types/ember__template': 4.0.7
       '@types/ember__test': 4.0.6(@babel/core@7.28.3)
-      '@types/ember__utils': 4.0.7(@babel/core@7.28.3)
+      '@types/ember__utils': 4.0.7
       '@types/rsvp': 4.0.9
 
   '@types/ember@4.0.11(@babel/core@7.28.3)':
@@ -8770,6 +8770,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.28.3)':
     dependencies:
@@ -9315,7 +9319,7 @@ snapshots:
       '@glimmer/syntax': 0.95.0
       babel-import-util: 3.0.1
 
-  babel-plugin-ember-template-compilation@3.0.0:
+  babel-plugin-ember-template-compilation@3.0.1:
     dependencies:
       '@glimmer/syntax': 0.95.0
       babel-import-util: 3.0.1
@@ -9358,7 +9362,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.3
       '@babel/helper-define-polyfill-provider': 0.6.5(@babel/core@7.28.3)
-      core-js-compat: 3.45.0
+      core-js-compat: 3.45.1
     transitivePeerDependencies:
       - supports-color
 
@@ -9896,12 +9900,12 @@ snapshots:
 
   browser-process-hrtime@1.0.0: {}
 
-  browserslist@4.25.2:
+  browserslist@4.25.3:
     dependencies:
-      caniuse-lite: 1.0.30001735
-      electron-to-chromium: 1.5.203
+      caniuse-lite: 1.0.30001737
+      electron-to-chromium: 1.5.208
       node-releases: 2.0.19
-      update-browserslist-db: 1.1.3(browserslist@4.25.2)
+      update-browserslist-db: 1.1.3(browserslist@4.25.3)
 
   bser@2.1.1:
     dependencies:
@@ -9990,7 +9994,7 @@ snapshots:
     dependencies:
       tmp: 0.0.28
 
-  caniuse-lite@1.0.30001735: {}
+  caniuse-lite@1.0.30001737: {}
 
   capture-exit@2.0.0:
     dependencies:
@@ -10254,9 +10258,9 @@ snapshots:
 
   copy-descriptor@0.1.1: {}
 
-  core-js-compat@3.45.0:
+  core-js-compat@3.45.1:
     dependencies:
-      browserslist: 4.25.2
+      browserslist: 4.25.3
 
   core-js@2.6.12: {}
 
@@ -10476,7 +10480,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.203: {}
+  electron-to-chromium@1.5.208: {}
 
   ember-auto-import@2.10.0(@glint/template@1.5.2)(webpack@5.101.3):
     dependencies:
@@ -11119,7 +11123,7 @@ snapshots:
   enhanced-resolve@5.18.3:
     dependencies:
       graceful-fs: 4.2.11
-      tapable: 2.2.2
+      tapable: 2.2.3
 
   ensure-posix-path@1.1.1: {}
 
@@ -11463,7 +11467,7 @@ snapshots:
       pretty-ms: 9.2.0
       signal-exit: 4.1.0
       strip-final-newline: 4.0.0
-      yoctocolors: 2.1.1
+      yoctocolors: 2.1.2
 
   exit@0.1.2: {}
 
@@ -12460,7 +12464,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.2
+      yoctocolors-cjs: 2.1.3
 
   internal-slot@1.1.0:
     dependencies:
@@ -12871,7 +12875,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  ky@1.8.2: {}
+  ky@1.9.0: {}
 
   latest-version@9.0.0:
     dependencies:
@@ -13163,7 +13167,7 @@ snapshots:
   mini-css-extract-plugin@2.9.4(webpack@5.101.3):
     dependencies:
       schema-utils: 4.3.2
-      tapable: 2.2.2
+      tapable: 2.2.3
       webpack: 5.101.3
 
   minimatch@10.0.3:
@@ -13564,7 +13568,7 @@ snapshots:
 
   package-json@10.0.1:
     dependencies:
-      ky: 1.8.2
+      ky: 1.9.0
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
       semver: 7.7.2
@@ -14706,7 +14710,7 @@ snapshots:
       js-yaml: 3.14.1
       minipass: 2.9.0
 
-  tapable@2.2.2: {}
+  tapable@2.2.3: {}
 
   tar@6.2.1:
     dependencies:
@@ -15099,9 +15103,9 @@ snapshots:
       has-value: 0.3.1
       isobject: 3.0.1
 
-  update-browserslist-db@1.1.3(browserslist@4.25.2):
+  update-browserslist-db@1.1.3(browserslist@4.25.3):
     dependencies:
-      browserslist: 4.25.2
+      browserslist: 4.25.3
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -15243,7 +15247,7 @@ snapshots:
       '@webassemblyjs/wasm-parser': 1.14.1
       acorn: 8.15.0
       acorn-import-phases: 1.0.4(acorn@8.15.0)
-      browserslist: 4.25.2
+      browserslist: 4.25.3
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.18.3
       es-module-lexer: 1.7.0
@@ -15256,7 +15260,7 @@ snapshots:
       mime-types: 2.1.35
       neo-async: 2.6.2
       schema-utils: 4.3.2
-      tapable: 2.2.2
+      tapable: 2.2.3
       terser-webpack-plugin: 5.3.14(webpack@5.101.3)
       watchpack: 2.4.4
       webpack-sources: 3.3.3
@@ -15458,6 +15462,6 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  yoctocolors-cjs@2.1.2: {}
+  yoctocolors-cjs@2.1.3: {}
 
-  yoctocolors@2.1.1: {}
+  yoctocolors@2.1.2: {}
