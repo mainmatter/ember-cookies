@@ -69,8 +69,8 @@
     "@tsconfig/ember": "3.0.11",
     "@types/ember": "4.0.11",
     "@types/ember__utils": "4.0.7",
-    "@typescript-eslint/eslint-plugin": "8.44.0",
-    "@typescript-eslint/parser": "8.44.0",
+    "@typescript-eslint/eslint-plugin": "8.44.1",
+    "@typescript-eslint/parser": "8.44.1",
     "concurrently": "9.2.1",
     "eslint": "9.36.0",
     "eslint-config-prettier": "10.1.8",
@@ -79,7 +79,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "globals": "16.4.0",
     "prettier": "3.6.2",
-    "rollup": "4.52.0",
+    "rollup": "4.52.3",
     "typescript": "5.9.2"
   },
   "peerDependencies": {
