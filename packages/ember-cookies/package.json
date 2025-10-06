@@ -79,8 +79,8 @@
     "eslint-plugin-prettier": "5.5.4",
     "globals": "16.4.0",
     "prettier": "3.6.2",
-    "rollup": "4.52.3",
-    "typescript": "5.9.2"
+    "rollup": "4.52.4",
+    "typescript": "5.9.3"
   },
   "peerDependencies": {
     "ember-source": ">=4.0"
