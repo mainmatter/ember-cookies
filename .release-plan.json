@@ -2,16 +2,24 @@
   "solution": {
     "ember-cookies": {
       "impact": "minor",
-      "oldVersion": "1.3.0",
-      "newVersion": "1.4.0",
-      "pkgJSONPath": "./packages/ember-cookies/package.json",
+      "oldVersion": "1.2.0",
+      "newVersion": "1.3.0",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :memo: Documentation"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
         }
-      ]
+      ],
+      "pkgJSONPath": "./packages/ember-cookies/package.json"
     }
   },
-  "description": "## Release (2025-11-08)\n\nember-cookies 1.4.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-cookies`\n * [#1009](https://github.com/mainmatter/ember-cookies/pull/1009) chore(deps): update dependency ember-source to v6. Add peerDependency on >= 6.0 ([@BobrImperator](https://github.com/BobrImperator))\n"
+  "description": "## Release (2024-12-28)\n\nember-cookies 1.3.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-cookies`, `test-app`\n  * [#1015](https://github.com/mainmatter/ember-cookies/pull/1015) chore(typescript): move remaining addon and test-app code ([@BobrImperator](https://github.com/BobrImperator))\n  * [#1014](https://github.com/mainmatter/ember-cookies/pull/1014) chore(typescript): initial Typescript setup ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :memo: Documentation\n* `ember-cookies`, `test-app`\n  * [#1017](https://github.com/mainmatter/ember-cookies/pull/1017) doc(typescript): add usage example ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :house: Internal\n* `ember-cookies`, `test-app`\n  * [#1017](https://github.com/mainmatter/ember-cookies/pull/1017) doc(typescript): add usage example ([@BobrImperator](https://github.com/BobrImperator))\n  * [#1014](https://github.com/mainmatter/ember-cookies/pull/1014) chore(typescript): initial Typescript setup ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 1\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n"
 }
