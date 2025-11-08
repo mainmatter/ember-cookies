@@ -83,7 +83,7 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "ember-source": ">=4.0"
+    "ember-source": ">=6.0 || >=4.0"
   },
   "engines": {
     "node": ">= 16.*"
