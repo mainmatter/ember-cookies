@@ -1,16 +1,5 @@
 # Changelog
 
-
-
-## Release (2025-11-08)
-
-ember-cookies 1.4.0 (minor)
-
-#### :rocket: Enhancement
-* `ember-cookies`
-    * [#1009](https://github.com/mainmatter/ember-cookies/pull/1009) chore(deps): update dependency ember-source to v6. Add peerDependency on >= 6.0 ([@BobrImperator](https://github.com/BobrImperator))
-
-
 ## Release (2024-12-28)
 
 ember-cookies 1.3.0 (minor)
