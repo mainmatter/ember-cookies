@@ -66,11 +66,11 @@
     "@glint/environment-ember-loose": "1.5.2",
     "@glint/environment-ember-template-imports": "1.5.2",
     "@rollup/plugin-babel": "6.1.0",
-    "@tsconfig/ember": "3.0.11",
+    "@tsconfig/ember": "3.0.12",
     "@types/ember": "4.0.11",
     "@types/ember__utils": "4.0.7",
-    "@typescript-eslint/eslint-plugin": "8.46.3",
-    "@typescript-eslint/parser": "8.46.3",
+    "@typescript-eslint/eslint-plugin": "8.46.4",
+    "@typescript-eslint/parser": "8.46.4",
     "concurrently": "9.2.1",
     "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
@@ -79,7 +79,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "globals": "16.5.0",
     "prettier": "3.6.2",
-    "rollup": "4.53.1",
+    "rollup": "4.53.2",
     "typescript": "5.9.3"
   },
   "peerDependencies": {
