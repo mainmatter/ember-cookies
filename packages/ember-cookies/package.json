@@ -71,7 +71,7 @@
     "@types/ember__utils": "4.0.7",
     "@typescript-eslint/eslint-plugin": "8.47.0",
     "@typescript-eslint/parser": "8.47.0",
-    "concurrently": "9.2.1",
+    "concurrently": "10.0.5",
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-ember": "13.0.0",
