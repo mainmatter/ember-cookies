@@ -146,7 +146,7 @@ importers:
         version: 3.0.12
       '@types/ember-qunit':
         specifier: 6.1.3
-        version: 6.1.3(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@2.26.0)
+        version: 6.1.3(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@3.0.0)
       '@types/qunit':
         specifier: 2.19.13
         version: 2.19.13
@@ -206,7 +206,7 @@ importers:
         version: 9.0.3
       ember-qunit:
         specifier: 9.1.0
-        version: 9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@2.26.0)
+        version: 9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@3.0.0)
       ember-resolver:
         specifier: 13.1.1
         version: 13.1.1
@@ -220,8 +220,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(encoding@0.1.13)
       ember-try:
-        specifier: 4.0.0
-        version: 4.0.0(encoding@0.1.13)
+        specifier: 5.0.0
+        version: 5.0.0(encoding@0.1.13)
       eslint:
         specifier: 9.39.4
         version: 9.39.4
@@ -253,8 +253,8 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       qunit:
-        specifier: 2.26.0
-        version: 2.26.0
+        specifier: 3.0.0
+        version: 3.0.0
       request:
         specifier: 2.88.2
         version: 2.88.2
@@ -2897,6 +2897,7 @@ packages:
 
   charm@1.0.2:
     resolution: {integrity: sha512-wqW3VdPnlSWT4eRiYX+hcs+C6ViBPUWk1qTCd+37qw9kEm/a5n2qcyQDMBWvSYKN/ctqZzeXNQaeBjOetJJUkw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -3011,6 +3012,10 @@ packages:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
 
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+
   commander@14.0.3:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
@@ -3025,10 +3030,6 @@ packages:
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
-
-  commander@7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
 
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
@@ -3726,9 +3727,9 @@ packages:
     resolution: {integrity: sha512-jAv7fqYJK7QYYekPc/8Nr7KOqDpv/asqM6F8xcRnbmf9UrD35BkSffY63qUuiD9e0aR5qiMNBIQzH8f65rGDqw==}
     engines: {node: 10.* || 12.* || >= 14}
 
-  ember-try@4.0.0:
-    resolution: {integrity: sha512-gWG1k8+hio1rndJXxzIYhayL7ITof3ebkZ7HwFzFDaz3NARb8MjcVloKj1PFCheu8ZbY8iP8QTRPqb+J+N+Izg==}
-    engines: {node: '>= 18'}
+  ember-try@5.0.0:
+    resolution: {integrity: sha512-isJANACInldOtQkyERQllo+EZ4KqsrYjK0bhtHhviQQx4lQZ6XD3xQ54Ud4fo2ENP6vNJtH2+kTuhLbLlnK1Tw==}
+    engines: {node: '>= 22.12.0'}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -3937,6 +3938,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -5652,8 +5654,8 @@ packages:
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
 
-  node-watch@0.7.3:
-    resolution: {integrity: sha512-3l4E8uMPY1HdMMryPRUAl+oIHtXtyiTlIiESNSVSNxcPfzAFzeTbXFQkZfAwBbo0B1qMSG8nUABx+Gd+YrbKrQ==}
+  node-watch@0.7.4:
+    resolution: {integrity: sha512-RinNxoz4W1cep1b928fuFhvAQ5ag/+1UlMDV7rbyGthBIgsiEouS4kvRayvvboxii4m8eolKOIBo3OjDqbc+uQ==}
     engines: {node: '>=6'}
 
   nopt@3.0.6:
@@ -6168,9 +6170,9 @@ packages:
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.26.0:
-    resolution: {integrity: sha512-KSv16YomcYmiK90qTOJl3Bm5IvTf2upqQDdBQWCvSQWe94FWobnUgKOpvpvZdG7VkDt3TJSI8k8g9+GGGEd7Fw==}
-    engines: {node: '>=10'}
+  qunit@3.0.0:
+    resolution: {integrity: sha512-g4Fgw3uhqwdjzhUDa0bYGQyGzs1xRcIY/32c5zUydnnrgzcA8updYF9nIeUis+PfwuqX6UB/4JpCNMnrVBY6iA==}
+    engines: {node: '>=18'}
     hasBin: true
 
   randombytes@2.1.0:
@@ -7528,6 +7530,11 @@ packages:
   yam@1.0.0:
     resolution: {integrity: sha512-Hv9xxHtsJ9228wNhk03xnlDReUuWVvHwM4rIbjdAXYvHLs17xjuyF50N6XXFMN6N0omBaqgOok/MCK3At9fTAg==}
     engines: {node: ^4.5 || 6.* || >= 7.*}
+
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
 
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
@@ -9583,9 +9590,9 @@ snapshots:
     dependencies:
       '@types/node': 24.10.0
 
-  '@types/ember-qunit@6.1.3(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@2.26.0)':
+  '@types/ember-qunit@6.1.3(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@3.0.0)':
     dependencies:
-      ember-qunit: 9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@2.26.0)
+      ember-qunit: 9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@3.0.0)
     transitivePeerDependencies:
       - '@ember/test-helpers'
       - qunit
@@ -11143,6 +11150,8 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
+  commander@12.1.0: {}
+
   commander@14.0.3: {}
 
   commander@2.20.3: {}
@@ -11152,8 +11161,6 @@ snapshots:
       graceful-readlink: 1.0.1
 
   commander@4.1.1: {}
-
-  commander@7.2.0: {}
 
   common-ancestor-path@1.0.1: {}
 
@@ -12010,11 +12017,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@2.26.0):
+  ember-qunit@9.1.0(@ember/test-helpers@5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2))(qunit@3.0.0):
     dependencies:
       '@ember/test-helpers': 5.4.2(@babel/core@7.28.6)(@glint/template@1.7.2)
       '@embroider/addon-shim': 1.10.2
-      qunit: 2.26.0
+      qunit: 3.0.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - supports-color
@@ -12107,7 +12114,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  ember-try@4.0.0(encoding@0.1.13):
+  ember-try@5.0.0(encoding@0.1.13):
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.5
@@ -12118,9 +12125,10 @@ snapshots:
       fs-extra: 6.0.1
       resolve: 1.22.11
       rimraf: 3.0.2
-      semver: 7.7.3
+      semver: 7.7.4
       temp-dir: 2.0.0
       walk-sync: 2.2.0
+      yaml: 2.9.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -14430,7 +14438,7 @@ snapshots:
 
   node-releases@2.0.27: {}
 
-  node-watch@0.7.3: {}
+  node-watch@0.7.4: {}
 
   nopt@3.0.6:
     dependencies:
@@ -14911,10 +14919,10 @@ snapshots:
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.26.0:
+  qunit@3.0.0:
     dependencies:
-      commander: 7.2.0
-      node-watch: 0.7.3
+      commander: 12.1.0
+      node-watch: 0.7.4
       tiny-glob: 0.2.9
 
   randombytes@2.1.0:
@@ -16577,6 +16585,8 @@ snapshots:
     dependencies:
       fs-extra: 4.0.3
       lodash.merge: 4.6.2
+
+  yaml@2.9.1: {}
 
   yargs-parser@20.2.9: {}
 
